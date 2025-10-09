@@ -26,6 +26,7 @@ int main() {
     printf("Initial array: ");
     for (int i = 0; i < n; i++) {
         printf("%d ", array[i]);
+        printf("Index %d -> Value: %d, Address: %p\n", i, array[i], (void*)&array[i]);
     }
     printf("\n");
     
@@ -50,6 +51,7 @@ int main() {
     printf("Resized array: ");
     for (int i = 0; i < n; i++) {
         printf("%d ", array[i]);
+        printf("Index %d -> Value: %d, Address: %p\n", i, array[i], (void*)&array[i]);
     }
     printf("\n");
 
