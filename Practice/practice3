@@ -1,0 +1,82 @@
+#include <stdio.h>
+#include <stdlib.h>
+// Define the node structure
+typedef struct Node {
+    int data;
+    struct Node* next;
+} Node;
+
+// Create a new node with given value
+Node* createNode(int value,int i) {
+    Node* newNode = (Node*)malloc(sizeof(Node));
+    if (newNode == NULL) {
+        printf("Memory allocation failed.\n");
+        exit(1);
+    }
+ 
+    newNode->data = value;
+    newNode->next = NULL;
+    printf("Node %d -> Address: %p, Value: %d\n", i, (void*)newNode, newNode->data);
+    i++;
+    return newNode;
+}
+
+// Traverse and print memory information
+void traverseList(Node* head) {
+    Node* current = head;
+    int index = 0;
+
+    while (current != NULL) {
+        printf("Node %d: Value = %d, Address = %p, Next = %p\n",
+            index, current->data, (void*)current, (void*)current->next);
+        current = current->next;
+        index++;
+    }
+}
+
+Node* insert(Node* head, int v,int i)
+{
+    Node* insert=createNode(v, i);
+    Node* Target = head->next->next->next;
+    head->next->next = NULL;
+    insert->next = Target->next;
+    Target->next = insert;
+    return 
+
+}
+Node* deletetail(Node* head)
+{
+    Node* Target = head;
+    Node* Prev = head;
+    while (Target->next != NULL)
+    {
+        Prev = Target;
+        Target = Target->next;
+    }
+    Prev->next = NULL;
+    free(Target);
+
+}
+int main() {
+    // Create linked list: 10 -> 20 -> 30 -> NULL
+    Node* head = createNode(10,0);
+    head->next = createNode(20,1);
+    head->next->next = createNode(30,2);
+
+    // Traverse and print
+    printf("Traversing the linked list:\n");
+    traverseList(head);
+    head->next->next->next = insert(40, 3);
+    deletetail(head);
+
+    // Free memory
+    Node* current = head;
+
+    while (current != NULL) {
+        Node* temp = current;
+        current = current->next;
+        free(temp);
+        printf("address %p\n"(void*)temp);
+    }
+
+    return 0;
