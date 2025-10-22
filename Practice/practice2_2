@@ -35,7 +35,7 @@ int main()
         }
     }
     printf("Initial memory address (array): %p\n", (void*)array);
-    printf("Initial memory end address: %p\n", (void*)(array + depth - 1));
+    printf("Initial memory end address: %p\n", (void*)(array + depth*sizeof(int) - 1));
 
     for (int d = 0; d < depth; d++)
     {
@@ -99,7 +99,7 @@ int main()
     }
 
     printf("After realloc memory address (array): %p\n", (void*)array);
-    printf("After realloc end address : %p\n", (void*)(array + new_depth - 1));
+    printf("After realloc end address : %p\n", (void*)(array + new_depth*sizeof(int) - 1));
 
     for (int d = 0; d < new_depth; d++) 
     {
