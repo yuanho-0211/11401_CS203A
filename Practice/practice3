@@ -37,27 +37,35 @@ void traverseList(Node* head) {
 Node* insert(Node* head, int v,int i)
 {
     Node* insert=createNode(v, i);
-    Node* Target = head->next->next->next;
-    head->next->next = NULL;
-    insert->next = Target->next;
-    Target->next = insert;
-    return 
+    Node* Target = head;
+    int count = 0;
+    while (Target != NULL && count < 3-1) 
+    { 
+        Target = Target->next;
+        count++;
+    }
+    return head;
 
 }
 Node* deletetail(Node* head)
 {
     Node* Target = head;
     Node* Prev = head;
+    int i = 0; 
     while (Target->next != NULL)
     {
         Prev = Target;
         Target = Target->next;
+        i++;
     }
     Prev->next = NULL;
     free(Target);
+    printf("Node %d -> Address: %p, Value: %d\n", i, (void*)Target, Target->data);
+    return head;
 
 }
-int main() {
+int main() 
+{
     // Create linked list: 10 -> 20 -> 30 -> NULL
     Node* head = createNode(10,0);
     head->next = createNode(20,1);
@@ -66,17 +74,17 @@ int main() {
     // Traverse and print
     printf("Traversing the linked list:\n");
     traverseList(head);
-    head->next->next->next = insert(40, 3);
-    deletetail(head);
+    head = insert(head,40, 3);
+    head =deletetail(head);
 
     // Free memory
     Node* current = head;
 
-    while (current != NULL) {
+    while (current != NULL) 
+    {
         Node* temp = current;
         current = current->next;
         free(temp);
-        printf("address %p\n"(void*)temp);
+        printf("address %p\n",(void*)temp);
     }
-
-    return 0;
+}
