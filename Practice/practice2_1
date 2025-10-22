@@ -1,44 +1,47 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main() {
+int main()
+{
     int **array;
     int row=3,col=4;
+    array = (int **) malloc(row * sizeof(int*));
 
-    
-    array = (int **) malloc(row * sizeof(int));
-
-    if (array == NULL) {
+    if (array == NULL) 
+    {
         printf("Memory allocation failed\n");
         return 1;
     }
-    for(int i=0; i<=row；i++)
+    for(int i=0; i< row;i++)
     {
-    array[i] = (int *) malloc(cols * sizeof(int));
+        array[i] = (int *) malloc(col * sizeof(int));
         if (array[i] == NULL)
         {
             printf("Memory allocation for row %d failed\n", i);
             return 1;
         }
     }
-            
-
+        
     // Print the starting memory address
     printf("Initial memory address: %p\n", (void*)array);
-    printf("Initial memory end address  : %p\n", (void*)(array + row*sixzeof(int) - 1));
+    printf("Initial memory end address  : %p\n", (void*)(array + row*sizeof(int) - 1));
 
     // Initialize elements
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < row; i++)
     {
-      for (int j= 0; j< n; j++)
-        array[i][j] = (col+1)+(j+1)
+      for (int j= 0; j< col; j++)
+      {
+        array[i][j] = (col+1)+(j+1);
+      }
     }
 
     // Print elements
     printf("Initial array: ");
-    for (int i = 0; i < rows; i++) {
-        for (int j = 0; j < cols; j++) {
-        printf("%d ", array[i][j]);
+    for (int i = 0; i < row; i++) 
+    {
+        for (int j = 0; j < col; j++) 
+        {
+            printf("%d ", array[i][j]);
             printf("Row %d Col %d -> Value: %d, Address: %p\n",
                    i, j, array[i][j], (void*)&array[i][j]);   
         }
@@ -47,39 +50,52 @@ int main() {
     printf("\n");
     
     // Double the size
-    int new_rows = rows * 2;
+    int new_rows = row * 2;
     array = (int **) realloc(array, new_rows * sizeof(int *));
-    if (array == NULL) {
+    if (array == NULL) 
+    {
         printf("Reallocation failed\n");
         return 1;
     }
 
-    for (int i = rows; i < new_rows; i++) {
-        array[i] = (int *) malloc(cols * sizeof(int));
+    for (int i = row; i < new_rows; i++) 
+    {
+        array[i] = (int *) malloc(col * sizeof(int));
         if (array[i] == NULL)
         {
             printf("Memory allocation for new row %d failed\n", i);
             return 1;
-         }
+        }
     }
 
-    for (int i = 0; i < new_row; i++)
+    for (int i = 0; i < new_rows; i++)
     {
       for (int j= 0; j< col; j++)
-        array[i][j] = (col+1)+(j+1)
+      {
+        array[i][j] = (col+1)+(j+1);
+      }
     }
 
     // Print the new memory address
     printf("After realloc memory address: %p\n", (void*)array);
-    printf("After realloc end address   : %p\n", (void*)(array + new_row * sizeof(n) - 1));
+    printf("After realloc end address   : %p\n", (void*)(array + new_rows * sizeof(int) - 1));
 
-    for (int i = 0; i < new_rows; i++) {
-        for (int j = 0; j < cols; j++) {
+    for (int i = 0; i < new_rows; i++) 
+    {
+        for (int j = 0; j < col; j++) 
+        {
             printf("Row %d Col %d -> Value: %d, Address: %p\n",
-                   i, j, array[i][j], (void*)&array[i][
+                   i, j, array[i][j], (void*)&array[i][j]);
+        }
+    }
     printf("\n");
+    for (int i = 0; i < new_rows; i++)
+    {
+        free(array[i]);
+    }
 
     // Free memory
     free(array);
     return 0;
 }
+
