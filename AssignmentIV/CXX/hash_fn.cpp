@@ -9,18 +9,36 @@
    Development History:
     - 2025/11/11: Initial implementation
     - 2025/11/17: Refactored to use hash_fn.hpp
+    - 2025/11/20: Modify two hash function
 
-   Developer: Yu-Feng Huang <yfhuang@saturn.yzu.edu.tw>
+   Developer: yuanho-0211 <ho950211@gmail.com>
  */
 #include "hash_fn.hpp"
 
 int myHashInt(int key, int m) {
-    // TODO: replace with your own design
-    return key % m;  // basic division method
+    if (m == 0) {
+        return -1; //zero table size
+    }
+    double A = 0.61803398875;
+    double formula = (key * A) - static_cast<int>(key * A);//mod 1 = static_cast<int>(key * A)
+    int formula_all = static_cast<int>(m*formula); // floor 
+    return formula_all;  // multiplication method example
 }
 
 int myHashString(const std::string& str, int m) {
+    if (m == 0) {
+        return -1; //zero table size
+    }
+    if (str.empty()) {
+        return 0; // empty strings
+    }
     unsigned long hash = 0;
-    // TODO: replace with your own design
-    return static_cast<int>(hash % m);  // basic division method
+    unsigned long p = 31;
+    unsigned long pi = 1; // p^i,p^0 = 1
+    for (int i = 0; i < str.length(); i++) {
+        hash = hash + str[i] * pi;
+        pi = (pi * p) ; // next p^i
+    }
+    int hash_new =hash%m;
+    return hash_new ; // string hashing 
 }
