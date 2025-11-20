@@ -17,7 +17,7 @@
 #include "hash_fn.h"
 
 int myHashInt(int key, int m) {
-    if (m = 0) {
+    if (m == 0) {
         return -1; //zero table size
     }
     double A = 0.61803398875;
@@ -27,7 +27,7 @@ int myHashInt(int key, int m) {
 }
 
 int myHashString(const char* str, int m) {
-    if (m = 0) {
+    if (m == 0) {
         return -1; //zero table size
     }
     if (str == NULL || str[0] == '\0') {
