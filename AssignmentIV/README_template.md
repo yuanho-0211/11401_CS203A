@@ -4,23 +4,23 @@ This assignment focuses on the design and observation of hash functions using C/
 Students are expected to implement and analyze the behavior of hash functions, 
 evaluate their efficiency, and understand their applications in computer science.
 
-Developer: [Your Name]  
-Email: [Your email]  
+Developer: [yuanho-0211]  
+Email: [ho950211@gmail.com]  
 
 ## My Hash Function
 ### Integer Keys 
 - Formula / pseudocode:
   ```text
-  [Your implementation here]
+  [h(k)=floor(m*(k*A mod1))]
   ```
-- Rationale: [Explain your design choices and how they minimize collisions.]
+- Rationale: [Because of the uniform distribution and simple computation.After  moding 1 and applying the floor, the resulting index sequence is less likely to be concentrated in a few positions, reducing collisions.]
 
 ### Non-integer Keys
 - Formula / pseudocode:
   ```text
-  [Your implementation here]
+  [h(s)=(sigma s[i]*p^i)mod m]
   ```
-- Rationale: [Explain your approach and its effectiveness for non-integer keys.]
+- Rationale: [Simple computation using accumulation.Reducing the likelihood of collisions between different strings.]
 
 ## Experimental Setup
 - Table sizes tested (m): 10, 11, 37
@@ -33,9 +33,9 @@ Email: [Your email]
 ## Results
 | Table Size (m) | Index Sequence         | Observation              |
 |----------------|------------------------|--------------------------|
-| 10             | 1, 2, 3, 4, ...        | Pattern repeats every 10 |
-| 11             | 10, 0, 1, 2, ...       | More uniform             |
-| 37             | 20, 21, 22, 23, ...    | Near-uniform             |
+| 10             | 9, 5, 2, 8, ...        | More uniform |
+| 11             | 10, 6, 2, 9, ...       | More uniform             |
+| 37             | 36, 22, 7, 30 , ...    | More uniform             |
 
 ## Compilation, Build, Execution, and Output
 
@@ -86,76 +86,200 @@ Email: [Your email]
   === Table Size m = 10 ===
   Key     Index
   -----------------
-  21      1
-  22      2
-  ...
+  21      9
+  22      5
+  23      2
+  24      8
+  25      4
+  26      0
+  27      6
+  28      3
+  29      9
+  30      5
+  51      5
+  52      1
+  53      7
+  54      3
+  55      9
+  56      6
+  57      2
+  58      8
+  59      4
+  60      0
+
 
   === Table Size m = 11 ===
   Key     Index
   -----------------
   21      10
-  22      0
-  ...
+  22      6
+  23      2
+  24      9
+  25      4
+  26      0
+  27      7
+  28      3
+  29      10
+  30      5
+  51      5
+  52      1
+  53      8
+  54      4
+  55      10
+  56      6
+  57      2
+  58      9
+  59      5
+  60      0
 
   === Table Size m = 37 ===
   Key     Index
   -----------------
-  21      21
+  21      36
   22      22
-  ...
+  23      7
+  24      30
+  25      16
+  26      2
+  27      25
+  28      11
+  29      34
+  30      20
+  51      19
+  52      5
+  53      27
+  54      13
+  55      36
+  56      22
+  57      8
+  58      31
+  59      17
+  60      3
+  
 
   === Hash Function Observation (C++ Version) ===
 
   === Table Size m = 10 ===
   Key     Index
   -----------------
-  21      1
-  22      2
-  ...
+  21      9
+  22      5
+  23      2
+  24      8
+  25      4
+  26      0
+  27      6
+  28      3
+  29      9
+  30      5
+  51      5
+  52      1
+  53      7
+  54      3
+  55      9
+  56      6
+  57      2
+  58      8
+  59      4
+  60      0
+  
 
   === Table Size m = 11 ===
   Key     Index
   -----------------
   21      10
-  22      0
-  ...
+  22      6
+  23      2
+  24      9
+  25      4
+  26      0
+  27      7
+  28      3
+  29      10
+  30      5
+  51      5
+  52      1
+  53      8
+  54      4
+  55      10
+  56      6
+  57      2
+  58      9
+  59      5
+  60      0
 
   === Table Size m = 37 ===
   Key     Index
   -----------------
-  21      21
+  21      36
   22      22
-  ...
-  ```
+  23      7
+  24      30
+  25      16
+  26      2
+  27      25
+  28      11
+  29      34
+  30      20
+  51      19
+  52      5
+  53      27
+  54      13
+  55      36
+  56      22
+  57      8
+  58      31
+  59      17
+  60      3
 
 - Example output for strings:
   ```
   === String Hash (m = 10) ===
   Key     Index
   -----------------
-  cat     0
-  dog     0
-  ...
+  cat     2
+  dog     4
+  bat     1
+  cow     9
+  ant     3
+  owl     8
+  bee     0
+  hen     5
+  pig     0
+  fox     3
 
   === String Hash (m = 11) ===
   Key     Index
   -----------------
-  cat     0
-  dog     0
-  ...
+  cat     6
+  dog     4
+  bat     5
+  cow     1
+  ant     0
+  owl     8
+  bee     3
+  hen     1
+  pig     6
+  fox     8
 
   === String Hash (m = 37) ===
   Key     Index
   -----------------
-  cat     0
-  dog     0
-  ...
-  ```
+  cat     30
+  dog     34
+  bat     29
+  cow     17
+  ant     24
+  owl     29
+  bee     20
+  hen     17
+  pig     8
+  fox     19
 
 - Observations: Outputs align with the analysis, showing better distribution with prime table sizes.
 - Example output for integers:
   ```
-  Hash table (m=10): [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+  Hash table (m=10): [9, 5, 2, 8, 4, 0, 6, 3, 9, 0]
   Hash table (m=11): [10, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
   Hash table (m=37): [20, 21, 22, 23, 24, 25, 26, 27, 28, 29, ...]
   ```
