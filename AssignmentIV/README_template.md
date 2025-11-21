@@ -279,7 +279,7 @@ Email: [ho950211@gmail.com]
 - Observations: Outputs align with the analysis, showing better distribution with prime table sizes.
 - Example output for integers:
   ```
-  Hash table (m=10): [9, 5, 2, 8, 4, 0, 6, 3, 9, 0]
+  Hash table (m=10): [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
   Hash table (m=11): [10, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
   Hash table (m=37): [20, 21, 22, 23, 24, 25, 26, 27, 28, 29, ...]
   ```
@@ -292,11 +292,13 @@ Email: [ho950211@gmail.com]
 - Observations: Outputs align with the analysis, showing better distribution with prime table sizes.
 
 ## Analysis
+- Reduce collisions: The polynomial hash can reduce collisions by using of p^i.
+- Uniformity: The multiplication method can disperse consecutive keys, improving the uniformity of index distribution.
 - Prime vs non-prime `m`: Prime table sizes generally result in better distribution and fewer collisions.
 - Patterns or collisions: Non-prime table sizes tend to produce repetitive patterns, leading to more collisions.
 - Improvements: Use a prime table size and a well-designed hash function to enhance distribution.
 
 ## Reflection
-1. Designing hash functions requires balancing simplicity and effectiveness to minimize collisions.
-2. Table size significantly impacts the uniformity of the hash distribution, with prime sizes performing better.
-3. The design using a prime table size and a linear transformation formula produced the most uniform index sequence.
+1. Designing my own hash function allows for a deeper understanding of the concepts and the ability to connect them with classroom learning.
+2. By converting the formula into a program, I can quickly see the results and improve my design.
+3. Observing the uniformity and collisions helps me understand the strengths and weaknesses of my own design.
