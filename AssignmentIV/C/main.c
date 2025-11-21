@@ -11,22 +11,10 @@
    Development History:
     - 2025/11/11: Initial implementation
 
-   Developer: Yu-Feng Huang <yfhuang@saturn.yzu.edu.tw>
+   Developer: yuanho-0211 <ho950211@gmail.com>
  */
 
-/**
- * @brief Computes the hash index for an integer key.
- * @param key The integer key to hash.
- * @param m The table size.
- * @return The computed hash index.
- */
 
-/**
- * @brief Computes the hash index for a string key.
- * @param key The string key to hash.
- * @param m The table size.
- * @return The computed hash index.
- */
 
 #include <stdio.h>
 #include <string.h>
