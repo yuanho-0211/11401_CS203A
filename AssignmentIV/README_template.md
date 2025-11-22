@@ -11,16 +11,19 @@ Email: [ho950211@gmail.com]
 ### Integer Keys 
 - Formula / pseudocode:
   ```text
-  [h(k)=floor(m*(k*A mod1))] A = 0.6180339887
+  [ formula=floor(m*(k*A mod1))
+    formula=(formula+1)*17)mod m)
+    formula=(formula+1)*13)mod m)
+    A = 0.6180339887             ]
   ```
-- Rationale: [This formula is a simple computation.Choosing A with more decimal places pruduces a more uniform distribution After  moding 1 and applying the floor, the resulting index sequence is less likely to be concentrated in a few positions, reducing collisions.]
+- Rationale: [This formula is a simple computation.Choosing A with more decimal places pruduces a more uniform distribution After  moding 1 and applying the floor, the resulting index sequence is less likely to be concentrated in a few positions, reducing collisions.Adding 1 at the end, multiplying by a prime number, and performing this process twice can improve the distribution.]
 
 ### Non-integer Keys
 - Formula / pseudocode:
   ```text
-  [h(s)=(sigma s[i]*p^i)mod m] p = 31
+  [formula=sigma (s[i]*p^i+1)*17 mod m] p = 31
   ```
-- Rationale: [Simple computation using accumulation. Choosing p as a prime number makes the distribution more uniform,reducing the likelihood of collisions between different strings.]
+- Rationale: [Simple computation using accumulation. Choosing p as a prime number makes the distribution more uniform,reducing the likelihood of collisions between different strings.Using simple addition and multiplication by a prime number can improve the distribution.]
 
 ## Experimental Setup
 - Table sizes tested (m): 10, 11, 37
@@ -238,43 +241,43 @@ Email: [ho950211@gmail.com]
   === String Hash (m = 10) ===
   Key     Index
   -----------------
-  cat     7
-  dog     1
-  bat     0
-  cow     6
-  ant     4
-  owl     9
-  bee     3
-  hen     8
-  pig     3
-  fox     4
+  cat     1
+  dog     5
+  bat     4
+  cow     0
+  ant     8
+  owl     3
+  bee     7
+  hen     2
+  pig     7
+  fox     8
 
   === String Hash (m = 11) ===
   Key     Index
   -----------------
-  cat     10
-  dog     0
-  bat     5
-  cow     7
-  ant     2
-  owl     9
-  bee     6
-  hen     7
-  pig     10
-  fox     9
+  cat     9
+  dog     8
+  bat     3
+  cow     1
+  ant     6
+  owl     10
+  bee     2
+  hen     1
+  pig     9
+  fox     10
 
   === String Hash (m = 37) ===
   Key     Index
   -----------------
-  cat     23
-  dog     12
-  bat     35
-  cow     31
-  ant     21
-  owl     35
-  bee     32
-  hen     31
-  pig     28
+  cat     9
+  dog     3
+  bat     29
+  cow     10
+  ant     18
+  owl     29
+  bee     24
+  hen     10
+  pig     5
   fox     7
 
 - Observations: Choosing prime numbers for m increases dispersion and reduces collisions.
@@ -293,12 +296,14 @@ Email: [ho950211@gmail.com]
 - Observations: Choosing prime numbers for m increases dispersion and reduces collisions.
 
 ## Analysis
-- Reduce collisions: The polynomial hash can reduce collisions by using of p^i.
+- Reduce collisions:  Reduce collisions by using of p^i.
 - Choose number: In the formula, the choice of A and P affects dispersion and collisions.
 - Uniformity: The multiplication method can disperse consecutive keys, improving the uniformity of index distribution.
+- Prime number:Multiplying by a prime number can improve distribution and reduce collisions.
 
 ## Reflection
 1. Designing my own hash function allows for a deeper understanding of the concepts and the ability to connect them with classroom learning.
 2. By converting the formula into a program, I can quickly see the results and improve my design.
 3. Observing the uniformity and collisions helps me understand the strengths and weaknesses of my own design.
 4. Choosing A with more decimal places and choosing p as a prime number make the distribution more uniform,reducing the likelihood of collisions .
+5.I can design my own function to achieve a more uniform distribution by additionally multiplying by a prime number or using other method,such as addition, subtraction, multiplication, and division operations.
