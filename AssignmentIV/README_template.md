@@ -238,44 +238,44 @@ Email: [ho950211@gmail.com]
   === String Hash (m = 10) ===
   Key     Index
   -----------------
-  cat     4
-  dog     8
-  bat     7
-  cow     3
-  ant     1
-  owl     6
-  bee     0
-  hen     5
-  pig     0
-  fox     1
+  cat     7
+  dog     1
+  bat     0
+  cow     6
+  ant     4
+  owl     9
+  bee     3
+  hen     8
+  pig     3
+  fox     4
 
   === String Hash (m = 11) ===
   Key     Index
   -----------------
-  cat     9
-  dog     6
-  bat     2
+  cat     10
+  dog     0
+  bat     5
   cow     7
-  ant     0
-  owl     1
-  bee     10
+  ant     2
+  owl     9
+  bee     6
   hen     7
-  pig     9
-  fox     1
+  pig     10
+  fox     9
 
   === String Hash (m = 37) ===
   Key     Index
   -----------------
-  cat     25
-  dog     16
-  bat     18
-  cow     8
-  ant     20
-  owl     18
-  bee     29
-  hen     8
-  pig     19
-  fox     22
+  cat     23
+  dog     12
+  bat     35
+  cow     31
+  ant     21
+  owl     35
+  bee     32
+  hen     31
+  pig     28
+  fox     7
 
 - Observations: Choosing prime numbers for m increases dispersion and reduces collisions.
 - Example output for integers:
