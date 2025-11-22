@@ -11,16 +11,16 @@ Email: [ho950211@gmail.com]
 ### Integer Keys 
 - Formula / pseudocode:
   ```text
-  [h(k)=floor(m*(k*A mod1))]
+  [h(k)=floor(m*(k*A mod1))] A = 0.6180339887
   ```
-- Rationale: [Because of the uniform distribution and simple computation.After  moding 1 and applying the floor, the resulting index sequence is less likely to be concentrated in a few positions, reducing collisions.]
+- Rationale: [This formula is a simple computation.Choosing A with more decimal places pruduces a more uniform distribution After  moding 1 and applying the floor, the resulting index sequence is less likely to be concentrated in a few positions, reducing collisions.]
 
 ### Non-integer Keys
 - Formula / pseudocode:
   ```text
-  [h(s)=(sigma s[i]*p^i)mod m]
+  [h(s)=(sigma s[i]*p^i)mod m] p = 31
   ```
-- Rationale: [Simple computation using accumulation.Reducing the likelihood of collisions between different strings.]
+- Rationale: [Simple computation using accumulation. Choosing p as a prime number makes the distribution more uniform,reducing the likelihood of collisions between different strings.]
 
 ## Experimental Setup
 - Table sizes tested (m): 10, 11, 37
@@ -276,7 +276,7 @@ Email: [ho950211@gmail.com]
   pig     8
   fox     19
 
-- Observations: Outputs align with the analysis, showing better distribution with prime table sizes.
+- Observations: Choosing prime numbers for m increases dispersion and reduces collisions.
 - Example output for integers:
   ```
   Hash table (m=10): [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
@@ -289,16 +289,15 @@ Email: [ho950211@gmail.com]
   Hash table (m=11): ["fox", "cat", "dog", "bat", "cow", ...]
   Hash table (m=37): ["bee", "hen", "pig", "fox", "cat", ...]
   ```
-- Observations: Outputs align with the analysis, showing better distribution with prime table sizes.
+- Observations: Choosing prime numbers for m increases dispersion and reduces collisions.
 
 ## Analysis
 - Reduce collisions: The polynomial hash can reduce collisions by using of p^i.
+  Choose number: In the formula, the choice of A and P affects dispersion and collisions.
 - Uniformity: The multiplication method can disperse consecutive keys, improving the uniformity of index distribution.
-- Prime vs non-prime `m`: Prime table sizes generally result in better distribution and fewer collisions.
-- Patterns or collisions: Non-prime table sizes tend to produce repetitive patterns, leading to more collisions.
-- Improvements: Use a prime table size and a well-designed hash function to enhance distribution.
 
 ## Reflection
 1. Designing my own hash function allows for a deeper understanding of the concepts and the ability to connect them with classroom learning.
 2. By converting the formula into a program, I can quickly see the results and improve my design.
 3. Observing the uniformity and collisions helps me understand the strengths and weaknesses of my own design.
+4. Choosing A with more decimal places and choosing p as a prime number make the distribution more uniform,reducing the likelihood of collisions .
