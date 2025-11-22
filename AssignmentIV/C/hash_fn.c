@@ -23,7 +23,7 @@ int myHashInt(int key, int m) {
     double A = 0.61803398875;
     double formula = (key * A) - (int)(key * A); //mod 1
     int formula_all = m*formula; // floor 
-    formula_all = (formula_all * 7 * 13) % m;
+    formula_all = (formula_all * 7 +key*3) % m;
     return formula_all; 
 }
 
@@ -42,6 +42,6 @@ int myHashString(const char* str, int m) {
         hash = (hash + (unsigned char)(str[i]) * pi);
         pi = (pi * p)  ; // next p^i
     }
-    int hash_new = (hash * 7 * 13) % m;
+    int hash_new = (hash * 7 ) % m;
     return hash_new ; // string hashing 
 }
