@@ -20,8 +20,10 @@ int myHashInt(int key, int m) {
         return -1; //zero table size
     }
     double A = 0.61803398875;
-    double formula = (key * A) - static_cast<int>(key * A);//mod 1 = static_cast<int>(key * A)
+    double formula = (key * A) - static_cast<int>(key * A);//mod 1 
     int formula_all = static_cast<int>(m*formula); // floor 
+    formula_all = ((formula_all+1) * 17 ) % m;
+    formula_all = ((formula_all+1) * 13 ) % m;
     return formula_all;  // multiplication method example
 }
 
@@ -39,6 +41,6 @@ int myHashString(const std::string& str, int m) {
         hash = hash + str[i] * pi;
         pi = (pi * p) ; // next p^i
     }
-    int hash_new =hash%m;
+    int hash_new =(hash * 7 ) % m;
     return hash_new ; // string hashing 
 }
