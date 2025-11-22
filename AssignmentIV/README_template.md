@@ -21,7 +21,7 @@ Email: [ho950211@gmail.com]
 ### Non-integer Keys
 - Formula / pseudocode:
   ```text
-  [formula=sigma (s[i]*p^i+1)*17 mod m] p = 31
+  [formula=sigma ((s[i]*p^i)+1)*17 mod m] p = 31
   ```
 - Rationale: [Simple computation using accumulation. Choosing p as a prime number makes the distribution more uniform,reducing the likelihood of collisions between different strings.Using simple addition and multiplication by a prime number can improve the distribution.]
 
