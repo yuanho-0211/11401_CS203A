@@ -23,7 +23,8 @@ int myHashInt(int key, int m) {
     double A = 0.61803398875;
     double formula = (key * A) - (int)(key * A); //mod 1
     int formula_all = m*formula; // floor 
-    formula_all = (formula_all * 7 +key*3) % m;
+    formula_all = ((formula_all+1) * 17 ) % m;
+    formula_all = ((formula_all+1) * 13 ) % m;
     return formula_all; 
 }
 
