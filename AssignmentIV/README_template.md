@@ -305,4 +305,4 @@ Email: [ho950211@gmail.com]
 2. By converting the formula into a program, I can quickly see the results and improve my design.
 3. Observing the uniformity and collisions helps me understand the strengths and weaknesses of my own design.
 4. Choosing A with more decimal places and choosing p as a prime number make the distribution more uniform,reducing the likelihood of collisions .
-5.I can design my own function to achieve a more uniform distribution by additionally multiplying by a prime number or using other method,such as addition, subtraction, multiplication, and division operations.
+5. I can design my own function to achieve a more uniform distribution by additionally multiplying by a prime number or using other method,such as addition, subtraction, multiplication, and division operations.
