@@ -297,7 +297,7 @@ Email: [ho950211@gmail.com]
   Hash table (m=11): ["fox", "cat", "dog", "bat", "cow", ...]
   Hash table (m=37): ["bee", "hen", "pig", "fox", "cat", ...]
   ```
-- Observations: Choosing prime numbers for the table size m significantly improves the performance of hash functions because it increases the dispersion and reduces the likelihood of      collisions.By setting that m is prime, the hash function is less likely to produce patterns or repeated indices, which helps distribute keys more evenly and maintains better overall efficiency in the hash table operations.
+- Observations: Choosing prime numbers for the table size m significantly improves the performance of hash functions because it increases the dispersion and reduces the likelihood of      collisions.By setting that m is prime, the hash function is less likely to produce repeated indices, which helps distribute keys more evenly and maintains better overall efficiency in the hash table operations.
 
 
 ## Analysis
