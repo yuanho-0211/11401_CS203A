@@ -298,7 +298,6 @@ Email: [ho950211@gmail.com]
 ## Analysis
 - Reduce collisions:  Reduce collisions by using of p^i.
 - Choose number: In the formula, the choice of A and P affects dispersion and collisions.
-- Uniformity: The multiplication method can disperse consecutive keys, improving the uniformity of index distribution.
 - Prime number:Multiplying by a prime number can improve distribution and reduce collisions.
 
 ## Reflection
