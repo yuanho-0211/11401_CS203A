@@ -8,6 +8,7 @@ Developer: [yuanho-0211]
 Email: [ho950211@gmail.com]  
 
 ## Execution Environment
+## Output
 
 ## My Hash Function
 ### Integer Keys 
@@ -282,7 +283,8 @@ Email: [ho950211@gmail.com]
   pig     5
   fox     7
 
-- Observations: Choosing prime numbers for m increases dispersion and reduces collisions.
+- Observations: In a hash function, not only the table size m but also other numbers, such as adder or multipliers, affect how keys are distributed. Choosing suitable values helps spread keys evenly, reduce collisions, and improve the hash table’s efficiency.
+
 - Example output for integers:
   ```
   Hash table (m=10): [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
@@ -295,7 +297,8 @@ Email: [ho950211@gmail.com]
   Hash table (m=11): ["fox", "cat", "dog", "bat", "cow", ...]
   Hash table (m=37): ["bee", "hen", "pig", "fox", "cat", ...]
   ```
-- Observations: Choosing prime numbers for m increases dispersion and reduces collisions.
+- Observations: Choosing prime numbers for the table size m significantly improves the performance of hash functions because it increases the dispersion and reduces the likelihood of      collisions.By setting that m is prime, the hash function is less likely to produce patterns or repeated indices, which helps distribute keys more evenly and maintains better overall efficiency in the hash table operations.
+
 
 ## Analysis
 - Reduce collisions:  Reduce collisions by using of p^i.
