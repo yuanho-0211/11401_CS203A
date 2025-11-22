@@ -43,6 +43,7 @@ int myHashString(const char* str, int m) {
         hash = (hash + (unsigned char)(str[i]) * pi);
         pi = (pi * p)  ; // next p^i
     }
-    int hash_new = (hash * 7 ) % m;
+    int hash_new = ((hash+1) * 17 ) % m;
+    hash_new = ((hash+1) * 13 ) % m;
     return hash_new ; // string hashing 
 }
