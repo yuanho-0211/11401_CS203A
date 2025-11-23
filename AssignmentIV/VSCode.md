@@ -45,7 +45,7 @@ Before you begin, ensure you have the following:
 
 By following these steps, you can easily connect and manage your GitHub repositories using Visual Studio Code.
 ## Setup experience and any additional configuration steps 
-- git status: Tells you which files have been modified and whether there are changes ready to be committed.
+- git status: Tells me which files have been modified and whether there are changes ready to be committed.
 - git push: Push the committed commits to GitHub.
 - git config --global user.name "name": Set the username.
 - git config --global user.email "Email" Setthe user email.
