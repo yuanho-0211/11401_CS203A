@@ -7,7 +7,7 @@ Before you begin, ensure you have the following:
 - A GitHub account.
 
 ## Execution Environment
-Execution Environment:Linux
+- Execution Environment:Linux
 
 ## Steps to Connect to GitHub
 
