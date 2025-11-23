@@ -36,9 +36,9 @@ Email: [ho950211@gmail.com]
 ## Results
 | Table Size (m) | Index Sequence         | Observation              |
 |----------------|------------------------|--------------------------|
-| 10             | 3, 9, 6, 2, ...        | More uniform |
-| 11             | 2, 9, 5, 1, ...        | More uniform             |
-| 37             | 13, 27, 5, 19 , ...    | More uniform             |
+| 10             | 3, 9, 6, 2, 8, 4, 0, 7, 3, 9, 9, 5, 1, 7, 3, 0, 6, 2, 8, 4                    | More uniform |
+| 11             | 2, 9, 5, 1, 7, 3, 10, 6, 2, 8, 8, 4, 0, 7, 2, 9, 5, 1, 8, 3                   | More uniform |
+| 37             | 13, 27, 5, 19 , 33, 10, 24, 1, 15, 29, 30, 7, 22, 36, 13, 27, 4, 18, 32, 9    | More uniform |
 
 ## Compilation, Build, Execution, and Output
 
