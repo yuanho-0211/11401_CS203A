@@ -8,7 +8,7 @@ Developer: [yuanho-0211]
 Email: [ho950211@gmail.com]  
 
 ## Execution Environment
-## Output
+Execution Environment:Linux
 
 ## My Hash Function
 ### Integer Keys 
