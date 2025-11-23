@@ -6,6 +6,8 @@ Before you begin, ensure you have the following:
 - Git installed and configured on your system. [Download Git here](https://git-scm.com/).
 - A GitHub account.
 
+## Execution Environment
+
 ## Steps to Connect to GitHub
 
 1. **Install the GitHub Extension for VSCode**
