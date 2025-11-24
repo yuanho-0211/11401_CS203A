@@ -7,20 +7,23 @@ evaluate their efficiency, and understand their applications in computer science
 Developer: [yuanho-0211]  
 Email: [ho950211@gmail.com]  
 
+## Execution Environment
+- Execution Environment: Linux
+
 ## My Hash Function
 ### Integer Keys 
 - Formula / pseudocode:
   ```text
-  [h(k)=floor(m*(k*A mod1))]
+  [ formula=floor(m*(k*A mod1))  formula=(formula+1)*17 mod m  formula=(formula+1)*13 mod m  A = 0.6180339887  ]
   ```
-- Rationale: [Because of the uniform distribution and simple computation.After  moding 1 and applying the floor, the resulting index sequence is less likely to be concentrated in a few positions, reducing collisions.]
+- Rationale: [This formula is a simple computation.Choosing A with more decimal places pruduces a more uniform distribution After  moding 1 and applying the floor, the resulting index sequence is less likely to be concentrated in a few positions, reducing collisions.Adding 1 at the end, multiplying by a prime number, and performing this process twice can improve the distribution.]
 
 ### Non-integer Keys
 - Formula / pseudocode:
   ```text
-  [h(s)=(sigma s[i]*p^i)mod m]
+  [formula=(sigma(s[i]*p^i)+1)*17 mod m] p = 31
   ```
-- Rationale: [Simple computation using accumulation.Reducing the likelihood of collisions between different strings.]
+- Rationale: [Simple computation using accumulation. Choosing p as a prime number makes the distribution more uniform,reducing the likelihood of collisions between different strings.Using simple addition and multiplication by a prime number can improve the distribution.]
 
 ## Experimental Setup
 - Table sizes tested (m): 10, 11, 37
@@ -33,9 +36,9 @@ Email: [ho950211@gmail.com]
 ## Results
 | Table Size (m) | Index Sequence         | Observation              |
 |----------------|------------------------|--------------------------|
-| 10             | 9, 5, 2, 8, ...        | More uniform |
-| 11             | 10, 6, 2, 9, ...       | More uniform             |
-| 37             | 36, 22, 7, 30 , ...    | More uniform             |
+| 10             | 3, 9, 6, 2, 8, 4, 0, 7, 3, 9, 9, 5, 1, 7, 3, 0, 6, 2, 8, 4                    | More uniform |
+| 11             | 2, 9, 5, 1, 7, 3, 10, 6, 2, 8, 8, 4, 0, 7, 2, 9, 5, 1, 8, 3                   | More uniform |
+| 37             | 13, 27, 5, 19 , 33, 10, 24, 1, 15, 29, 30, 7, 22, 36, 13, 27, 4, 18, 32, 9    | More uniform |
 
 ## Compilation, Build, Execution, and Output
 
@@ -86,75 +89,75 @@ Email: [ho950211@gmail.com]
   === Table Size m = 10 ===
   Key     Index
   -----------------
-  21      9
-  22      5
-  23      2
-  24      8
-  25      4
-  26      0
-  27      6
-  28      3
-  29      9
-  30      5
-  51      5
-  52      1
-  53      7
-  54      3
-  55      9
-  56      6
-  57      2
-  58      8
-  59      4
-  60      0
+  21      3
+  22      9
+  23      6
+  24      2
+  25      8
+  26      4
+  27      0
+  28      7
+  29      3
+  30      9
+  51      9
+  52      5
+  53      1
+  54      7
+  55      3
+  56      0
+  57      6
+  58      2
+  59      8
+  60      4
 
 
   === Table Size m = 11 ===
   Key     Index
   -----------------
-  21      10
-  22      6
-  23      2
-  24      9
-  25      4
-  26      0
-  27      7
-  28      3
-  29      10
-  30      5
-  51      5
-  52      1
-  53      8
-  54      4
-  55      10
-  56      6
-  57      2
-  58      9
-  59      5
-  60      0
+  21      2
+  22      9
+  23      5
+  24      1
+  25      7
+  26      3
+  27      10
+  28      6
+  29      2
+  30      8
+  51      8
+  52      4
+  53      0
+  54      7
+  55      2
+  56      9
+  57      5
+  58      1
+  59      8
+  60      3
 
   === Table Size m = 37 ===
   Key     Index
   -----------------
-  21      36
-  22      22
-  23      7
-  24      30
-  25      16
-  26      2
-  27      25
-  28      11
-  29      34
-  30      20
-  51      19
-  52      5
-  53      27
-  54      13
-  55      36
-  56      22
-  57      8
-  58      31
-  59      17
-  60      3
+  21      13
+  22      27
+  23      5
+  24      19
+  25      33
+  26      10
+  27      24
+  28      1
+  29      15
+  30      29
+  51      30
+  52      7
+  53      22
+  54      36
+  55      13
+  56      27
+  57      4
+  58      18
+  59      32
+  60      9
   
 
   === Hash Function Observation (C++ Version) ===
@@ -162,121 +165,123 @@ Email: [ho950211@gmail.com]
   === Table Size m = 10 ===
   Key     Index
   -----------------
-  21      9
-  22      5
-  23      2
-  24      8
-  25      4
-  26      0
-  27      6
-  28      3
-  29      9
-  30      5
-  51      5
-  52      1
-  53      7
-  54      3
-  55      9
-  56      6
-  57      2
-  58      8
-  59      4
-  60      0
+  21      3
+  22      9
+  23      6
+  24      2
+  25      8
+  26      4
+  27      0
+  28      7
+  29      3
+  30      9
+  51      9
+  52      5
+  53      1
+  54      7
+  55      3
+  56      0
+  57      6
+  58      2
+  59      8
+  60      4
+
   
 
   === Table Size m = 11 ===
   Key     Index
   -----------------
-  21      10
-  22      6
-  23      2
-  24      9
-  25      4
-  26      0
-  27      7
-  28      3
-  29      10
-  30      5
-  51      5
-  52      1
-  53      8
-  54      4
-  55      10
-  56      6
-  57      2
-  58      9
-  59      5
-  60      0
+  21      2
+  22      9
+  23      5
+  24      1
+  25      7
+  26      3
+  27      10
+  28      6
+  29      2
+  30      8
+  51      8
+  52      4
+  53      0
+  54      7
+  55      2
+  56      9
+  57      5
+  58      1
+  59      8
+  60      3
 
   === Table Size m = 37 ===
   Key     Index
   -----------------
-  21      36
-  22      22
-  23      7
-  24      30
-  25      16
-  26      2
-  27      25
-  28      11
-  29      34
-  30      20
-  51      19
-  52      5
-  53      27
-  54      13
-  55      36
-  56      22
-  57      8
-  58      31
-  59      17
-  60      3
+  21      13
+  22      27
+  23      5
+  24      19
+  25      33
+  26      10
+  27      24
+  28      1
+  29      15
+  30      29
+  51      30
+  52      7
+  53      22
+  54      36
+  55      13
+  56      27
+  57      4
+  58      18
+  59      32
+  60      9
 
 - Example output for strings:
   ```
   === String Hash (m = 10) ===
   Key     Index
   -----------------
-  cat     2
-  dog     4
-  bat     1
-  cow     9
-  ant     3
-  owl     8
-  bee     0
-  hen     5
-  pig     0
-  fox     3
+  cat     1
+  dog     5
+  bat     4
+  cow     0
+  ant     8
+  owl     3
+  bee     7
+  hen     2
+  pig     7
+  fox     8
 
   === String Hash (m = 11) ===
   Key     Index
   -----------------
-  cat     6
-  dog     4
-  bat     5
+  cat     9
+  dog     8
+  bat     3
   cow     1
-  ant     0
-  owl     8
-  bee     3
+  ant     6
+  owl     10
+  bee     2
   hen     1
-  pig     6
-  fox     8
+  pig     9
+  fox     10
 
   === String Hash (m = 37) ===
   Key     Index
   -----------------
-  cat     30
-  dog     34
+  cat     9
+  dog     3
   bat     29
-  cow     17
-  ant     24
+  cow     10
+  ant     18
   owl     29
-  bee     20
-  hen     17
-  pig     8
-  fox     19
+  bee     24
+  hen     10
+  pig     5
+  fox     7
 
-- Observations: Outputs align with the analysis, showing better distribution with prime table sizes.
+- Observations: In a hash function, not only the table size m but also other numbers, such as adder or multipliers, affect how keys are distributed. Choosing suitable values helps spread keys evenly, reduce collisions, and improve the hash table’s efficiency.
+
 - Example output for integers:
   ```
   Hash table (m=10): [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
@@ -289,16 +294,17 @@ Email: [ho950211@gmail.com]
   Hash table (m=11): ["fox", "cat", "dog", "bat", "cow", ...]
   Hash table (m=37): ["bee", "hen", "pig", "fox", "cat", ...]
   ```
-- Observations: Outputs align with the analysis, showing better distribution with prime table sizes.
+- Observations: Choosing prime numbers for the table size m significantly improves the performance of hash functions because it increases the dispersion and reduces the likelihood of      collisions.By setting that m is prime, the hash function is less likely to produce repeated indices, which helps distribute keys more evenly and maintains better overall efficiency in the hash table operations.
+
 
 ## Analysis
-- Reduce collisions: The polynomial hash can reduce collisions by using of p^i.
-- Uniformity: The multiplication method can disperse consecutive keys, improving the uniformity of index distribution.
-- Prime vs non-prime `m`: Prime table sizes generally result in better distribution and fewer collisions.
-- Patterns or collisions: Non-prime table sizes tend to produce repetitive patterns, leading to more collisions.
-- Improvements: Use a prime table size and a well-designed hash function to enhance distribution.
+- Reduce collisions:  Reduce collisions by using of p^i.
+- Choose number: In the formula, the choice of A and P affects dispersion and collisions.
+- Prime number:Multiplying by a prime number can improve distribution and reduce collisions.
 
 ## Reflection
 1. Designing my own hash function allows for a deeper understanding of the concepts and the ability to connect them with classroom learning.
 2. By converting the formula into a program, I can quickly see the results and improve my design.
 3. Observing the uniformity and collisions helps me understand the strengths and weaknesses of my own design.
+4. Choosing A with more decimal places and choosing p as a prime number make the distribution more uniform,reducing the likelihood of collisions .
+5. I can design my own function to achieve a more uniform distribution by additionally multiplying by a prime number or using other method,such as addition, subtraction, multiplication, and division operations.
