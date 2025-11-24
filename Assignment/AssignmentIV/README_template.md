@@ -92,56 +92,10 @@ Email: [ho950211@gmail.com]
 
 
   === Table Size m = 11 ===
-  Key     Index
-  -----------------
-  21      2
-  22      9
-  23      5
-  24      1
-  25      7
-  26      3
-  27     10
-  28      6
-  29      2
-  30      8
-  51      8
-  52      4
-  53      0
-  54      7
-  55      2
-  56      9
-  57      5
-  58      1
-  59      8
-  60      3
-
 <img width="1194" height="614" alt="image" src="https://github.com/user-attachments/assets/f88fcd82-a1c3-4842-9b86-d5e4710c940f" />
 
 
   === Table Size m = 37 ===
-  Key     Index
-  -----------------
-  21      13
-  22      27
-  23      5
-  24      19
-  25      33
-  26      10
-  27      24
-  28      1
-  29      15
-  30      29
-  51      30
-  52      7
-  53      22
-  54      36
-  55      13
-  56      27
-  57      4
-  58      18
-  59      32
-  60      9
-
  <img width="1209" height="620" alt="image" src="https://github.com/user-attachments/assets/57bc93bb-5a64-42a8-8d12-dff7b83c2347" />
  
 
