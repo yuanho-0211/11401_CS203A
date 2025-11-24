@@ -87,142 +87,60 @@ Email: [ho950211@gmail.com]
   === Hash Function Observation (C Version) ===
 
   === Table Size m = 10 ===
+  
  <img width="1210" height="714" alt="image" src="https://github.com/user-attachments/assets/16aef9fb-1d42-4f8c-8929-92928baece18" />
 
 
 
   === Table Size m = 11 ===
+  
 <img width="1194" height="614" alt="image" src="https://github.com/user-attachments/assets/f88fcd82-a1c3-4842-9b86-d5e4710c940f" />
 
 
   === Table Size m = 37 ===
+  
  <img width="1209" height="620" alt="image" src="https://github.com/user-attachments/assets/57bc93bb-5a64-42a8-8d12-dff7b83c2347" />
  
 
   
-
   === Hash Function Observation (C++ Version) ===
 
   === Table Size m = 10 ===
-  Key     Index
-  -----------------
-  21      3
-  22      9
-  23      6
-  24      2
-  25      8
-  26      4
-  27      0
-  28      7
-  29      3
-  30      9
-  51      9
-  52      5
-  53      1
-  54      7
-  55      3
-  56      0
-  57      6
-  58      2
-  59      8
-  60      4
+  
+<img width="1262" height="755" alt="image" src="https://github.com/user-attachments/assets/75b49db7-f8f5-4bcc-a21a-81d0ef49b268" />
+
+
 
 
   === Table Size m = 11 ===
-  Key     Index
-  -----------------
-  21      2
-  22      9
-  23      5
-  24      1
-  25      7
-  26      3
-  27      10
-  28      6
-  29      2
-  30      8
-  51      8
-  52      4
-  53      0
-  54      7
-  55      2
-  56      9
-  57      5
-  58      1
-  59      8
-  60      3
-
+  
+<img width="1252" height="611" alt="image" src="https://github.com/user-attachments/assets/14a7e7a2-7243-486a-9706-0bca32ccf02d" />
   
 
   === Table Size m = 37 ===
-  Key     Index
-  -----------------
-  21      13
-  22      27
-  23      5
-  24      19
-  25      33
-  26      10
-  27      24
-  28      1
-  29      15
-  30      29
-  51      30
-  52      7
-  53      22
-  54      36
-  55      13
-  56      27
-  57      4
-  58      18
-  59      32
-  60      9
+  
+<img width="1249" height="605" alt="image" src="https://github.com/user-attachments/assets/84f93e9a-0da5-4103-8e88-ba1d71bf2466" />
+
 
 
 
 - Example output for strings:
   ```
   === String Hash (m = 10) ===
-  Key     Index
-  -----------------
-  cat     1
-  dog     5
-  bat     4
-  cow     0
-  ant     8
-  owl     3
-  bee     7
-  hen     2
-  pig     7
-  fox     8
+
+<img width="475" height="344" alt="image" src="https://github.com/user-attachments/assets/6e74c048-b911-4534-b874-2267000e148f" />
+
 
   === String Hash (m = 11) ===
-  Key     Index
-  -----------------
-  cat     9
-  dog     8
-  bat     3
-  cow     1
-  ant     6
-  owl     10
-  bee     2
-  hen     1
-  pig     9
-  fox     10
+
+<img width="365" height="358" alt="image" src="https://github.com/user-attachments/assets/c3c40a3a-7138-4935-ab58-8ace340c4c85" />
+
 
   === String Hash (m = 37) ===
-  Key     Index
-  -----------------
-  cat     9
-  dog     3
-  bat     29
-  cow     10
-  ant     18
-  owl     29
-  bee     24
-  hen     10
-  pig     5
-  fox     7
+
+<img width="367" height="351" alt="image" src="https://github.com/user-attachments/assets/5c6d4319-9998-418e-b2f9-02955f03b557" />
+
+  
 
 - Observations: In a hash function, not only the table size m but also other numbers, such as adder or multipliers, affect how keys are distributed. Choosing suitable values helps spread keys evenly, reduce collisions, and improve the hash table’s efficiency.
 
