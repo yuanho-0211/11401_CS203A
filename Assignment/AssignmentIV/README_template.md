@@ -163,7 +163,7 @@ Email: [ho950211@gmail.com]
   === Hash Function Observation (C++ Version) ===
 
   === Table Size m = 10 ===
-  <img width="1226" height="727" alt="image" src="https://github.com/user-attachments/assets/daf7f0ab-37ad-4dc7-866f-46f22b91441d" />
+ ![image](https://github.com/user-attachments/assets/daf7f0ab-37ad-4dc7-866f-46f22b91441d)
 
   Key     Index
   -----------------
