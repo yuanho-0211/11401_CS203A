@@ -87,7 +87,8 @@ Email: [ho950211@gmail.com]
   === Hash Function Observation (C Version) ===
 
   === Table Size m = 10 ===
-   ![image](https://github.com/user-attachments/assets/daf7f0ab-37ad-4dc7-866f-46f22b91441d)
+  ![image](https://github.com/user-attachments/assets/daf7f0ab-37ad-4dc7-866f-46f22b91441d)
+
   Key     Index
   -----------------
   21      3
@@ -114,6 +115,7 @@ Email: [ho950211@gmail.com]
 
   === Table Size m = 11 ===
    ![image](https://github.com/user-attachments/assets/fe86e064-aa28-4aa1-a4ed-daef5d518b38)
+
   Key     Index
   -----------------
   21      2
@@ -138,7 +140,8 @@ Email: [ho950211@gmail.com]
   60      3
 
   === Table Size m = 37 ===
-   <img width="1266" height="720" alt="image" src="https://github.com/user-attachments/assets/1fca7d94-e52f-4a6f-a4c4-f1a71ffcd1cf" />
+   ![image](https://github.com/user-attachments/assets/1fca7d94-e52f-4a6f-a4c4-f1a71ffcd1cf)
+
   Key     Index
   -----------------
   21      13
