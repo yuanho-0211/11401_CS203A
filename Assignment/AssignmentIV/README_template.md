@@ -47,13 +47,13 @@ Email: [ho950211@gmail.com]
   ```bash
   # Build both C and C++ versions
   make all
+  .\Makefile.bat
   
   # Build only C version
   make c
   
   # Build only C++ version
   make cxx
-  .\Makefile.bat
   ```
 
 ### Manual Compilation (if needed)
