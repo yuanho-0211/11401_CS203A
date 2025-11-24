@@ -8,7 +8,7 @@ Developer: [yuanho-0211]
 Email: [ho950211@gmail.com]  
 
 ## Execution Environment
-- Execution Environment: Linux
+- Execution Environment: Windows
 
 ## My Hash Function
 ### Integer Keys 
@@ -53,6 +53,7 @@ Email: [ho950211@gmail.com]
   
   # Build only C++ version
   make cxx
+  .\Makefile.bat
   ```
 
 ### Manual Compilation (if needed)
@@ -69,16 +70,19 @@ Email: [ho950211@gmail.com]
 - Remove all compiled files:
   ```bash
   make clean
+  .\Makefile.bat clean
   ```
 
 ### Execution
 - Run the compiled binary:
   ```bash
   ./hash_function
+  ./hash_function.exe
   ```
   or
   ```bash
   ./hash_function_cpp
+  ./hash_function_cpp.exe
   ```
 
 ### Result Snapshot
