@@ -110,7 +110,6 @@ Email: [ho950211@gmail.com]
   59      8
   60      4
 
-![image](https://github.com/user-attachments/assets/daf7f0ab-37ad-4dc7-866f-46f22b91441d)
 
 === Table Size m = 11 ===
  
@@ -137,7 +136,7 @@ Email: [ho950211@gmail.com]
   59      8
   60      3
 
-![image](https://github.com/user-attachments/assets/fe86e064-aa28-4aa1-a4ed-daef5d518b38)
+
 
   === Table Size m = 37 ===
   
@@ -164,7 +163,7 @@ Email: [ho950211@gmail.com]
   59      32
   60      9
 
-   <img width="1148" height="623" alt="image" src="https://github.com/user-attachments/assets/df1eaaab-29fc-4d63-b856-f44684e7dd90" />
+  
 
   === Hash Function Observation (C++ Version) ===
 
@@ -193,7 +192,6 @@ Email: [ho950211@gmail.com]
   59      8
   60      4
 
- ![image](https://github.com/user-attachments/assets/1fca7d94-e52f-4a6f-a4c4-f1a71ffcd1cf) 
 
   === Table Size m = 11 ===
   Key     Index
@@ -219,7 +217,7 @@ Email: [ho950211@gmail.com]
   59      8
   60      3
 
-  <img width="1033" height="612" alt="image" src="https://github.com/user-attachments/assets/ee963b23-4312-4877-886a-ba92c52af3d1" />
+  
 
   === Table Size m = 37 ===
   Key     Index
