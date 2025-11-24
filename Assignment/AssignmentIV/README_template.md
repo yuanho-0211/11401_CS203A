@@ -211,6 +211,8 @@ Email: [ho950211@gmail.com]
   
 
   === Table Size m = 11 ===
+  <img width="1190" height="602" alt="image" src="https://github.com/user-attachments/assets/fe86e064-aa28-4aa1-a4ed-daef5d518b38" />
+
   Key     Index
   -----------------
   21      2
@@ -235,6 +237,8 @@ Email: [ho950211@gmail.com]
   60      3
 
   === Table Size m = 37 ===
+  ![Uploading image.png…]()
+
   Key     Index
   -----------------
   21      13
