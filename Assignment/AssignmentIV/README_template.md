@@ -111,8 +111,8 @@ Email: [ho950211@gmail.com]
   60      4
 
 
-=== Table Size m = 11 ===
- Key     Index
+  === Table Size m = 11 ===
+  Key     Index
   -----------------
   21      2
   22      9
@@ -138,7 +138,6 @@ Email: [ho950211@gmail.com]
 
 
   === Table Size m = 37 ===
-  
   Key     Index
   -----------------
   21      13
