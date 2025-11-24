@@ -111,7 +111,8 @@ Email: [ho950211@gmail.com]
   60      4
 
 ![image](https://github.com/user-attachments/assets/daf7f0ab-37ad-4dc7-866f-46f22b91441d)
-  === Table Size m = 11 ===
+
+=== Table Size m = 11 ===
   Key     Index
   -----------------
   21      2
@@ -120,7 +121,7 @@ Email: [ho950211@gmail.com]
   24      1
   25      7
   26      3
-  27      10
+  27     10
   28      6
   29      2
   30      8
