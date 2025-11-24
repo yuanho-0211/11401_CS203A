@@ -112,8 +112,7 @@ Email: [ho950211@gmail.com]
 
 
 === Table Size m = 11 ===
- 
-  Key     Index
+ Key     Index
   -----------------
   21      2
   22      9
@@ -168,7 +167,6 @@ Email: [ho950211@gmail.com]
   === Hash Function Observation (C++ Version) ===
 
   === Table Size m = 10 ===
-  
   Key     Index
   -----------------
   21      3
