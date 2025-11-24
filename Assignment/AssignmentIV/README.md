@@ -14,7 +14,7 @@ Email: [ho950211@gmail.com]
 ### Integer Keys 
 - Formula / pseudocode:
   ```text
-  [ formula=floor(m*(k*A mod1))  formula=(formula+1)*17 mod m  formula=(formula+1)*13 mod m  A = 0.6180339887  ]
+  [ formula=floor(m*(k*A mod1))  formula=(formula+1)*17 mod m  formula=(formula+1)*13 mod m  A = 0.61803398875  ]
   ```
 - Rationale: [This formula is a simple computation.Choosing A with more decimal places pruduces a more uniform distribution After  moding 1 and applying the floor, the resulting index sequence is less likely to be concentrated in a few positions, reducing collisions.Adding 1 at the end, multiplying by a prime number, and performing this process twice can improve the distribution.]
 
