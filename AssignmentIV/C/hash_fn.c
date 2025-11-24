@@ -21,9 +21,11 @@ int myHashInt(int key, int m) {
         return -1; //zero table size
     }
     double A = 0.61803398875;
-    double formula = (key * A) - (int)(key * A);//mod 1=(int)(key * A)
+    double formula = (key * A) - (int)(key * A); //mod 1
     int formula_all = m*formula; // floor 
-    return formula_all;  // multiplication method example
+    formula_all = ((formula_all+1) * 17 ) % m;
+    formula_all = ((formula_all+1) * 13 ) % m;
+    return formula_all; 
 }
 
 int myHashString(const char* str, int m) {
@@ -39,8 +41,8 @@ int myHashString(const char* str, int m) {
     unsigned long pi = 1; // p^i,p^0 = 1
     for (int i = 0; str[i] != '\0'; i++) {
         hash = (hash + (unsigned char)(str[i]) * pi);
-        pi = (pi * p) ; // next p^i
+        pi = (pi * p)  ; // next p^i
     }
-    int hash_new =hash%m;
+    int hash_new = ((hash+1) * 17 ) % m;
     return hash_new ; // string hashing 
 }
