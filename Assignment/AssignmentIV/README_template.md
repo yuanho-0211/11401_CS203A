@@ -87,29 +87,6 @@ Email: [ho950211@gmail.com]
   === Hash Function Observation (C Version) ===
 
   === Table Size m = 10 ===
-  Key     Index
-  -----------------
-  21      3
-  22      9
-  23      6
-  24      2
-  25      8
-  26      4
-  27      0
-  28      7
-  29      3
-  30      9
-  51      9
-  52      5
-  53      1
-  54      7
-  55      3
-  56      0
-  57      6
-  58      2
-  59      8
-  60      4
-
  <img width="1210" height="714" alt="image" src="https://github.com/user-attachments/assets/16aef9fb-1d42-4f8c-8929-92928baece18" />
 
 
