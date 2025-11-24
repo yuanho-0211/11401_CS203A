@@ -114,8 +114,6 @@ Email: [ho950211@gmail.com]
 
 
   === Table Size m = 11 ===
-   ![image](https://github.com/user-attachments/assets/fe86e064-aa28-4aa1-a4ed-daef5d518b38)
-
   Key     Index
   -----------------
   21      2
@@ -139,9 +137,9 @@ Email: [ho950211@gmail.com]
   59      8
   60      3
 
-  === Table Size m = 37 ===
-   ![image](https://github.com/user-attachments/assets/1fca7d94-e52f-4a6f-a4c4-f1a71ffcd1cf)
+![image](https://github.com/user-attachments/assets/fe86e064-aa28-4aa1-a4ed-daef5d518b38)
 
+  === Table Size m = 37 ===
   Key     Index
   -----------------
   21      13
@@ -194,13 +192,9 @@ Email: [ho950211@gmail.com]
   59      8
   60      4
 
-  
+ ![image](https://github.com/user-attachments/assets/1fca7d94-e52f-4a6f-a4c4-f1a71ffcd1cf) 
 
   === Table Size m = 11 ===
-<img width="1033" height="612" alt="image" src="https://github.com/user-attachments/assets/ee963b23-4312-4877-886a-ba92c52af3d1" />
-
-
-
   Key     Index
   -----------------
   21      2
@@ -224,9 +218,9 @@ Email: [ho950211@gmail.com]
   59      8
   60      3
 
-  === Table Size m = 37 ===
-  ![Uploading image.png…]()
+  <img width="1033" height="612" alt="image" src="https://github.com/user-attachments/assets/ee963b23-4312-4877-886a-ba92c52af3d1" />
 
+  === Table Size m = 37 ===
   Key     Index
   -----------------
   21      13
@@ -249,6 +243,8 @@ Email: [ho950211@gmail.com]
   58      18
   59      32
   60      9
+
+![Uploading image.png…]()
 
 - Example output for strings:
   ```
