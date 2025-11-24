@@ -128,17 +128,20 @@ Email: [ho950211@gmail.com]
   ```
   === String Hash (m = 10) ===
 
-<img width="475" height="344" alt="image" src="https://github.com/user-attachments/assets/6e74c048-b911-4534-b874-2267000e148f" />
+<img width="1239" height="360" alt="image" src="https://github.com/user-attachments/assets/2eb28e99-b1a0-49ac-9897-7e68159fe539" />
+
 
 
   === String Hash (m = 11) ===
 
-<img width="365" height="358" alt="image" src="https://github.com/user-attachments/assets/c3c40a3a-7138-4935-ab58-8ace340c4c85" />
+<img width="1168" height="342" alt="image" src="https://github.com/user-attachments/assets/1586b34a-7f51-4246-ae4b-dae56f7bd3c6" />
+
 
 
   === String Hash (m = 37) ===
 
-<img width="367" height="351" alt="image" src="https://github.com/user-attachments/assets/5c6d4319-9998-418e-b2f9-02955f03b557" />
+<img width="1259" height="347" alt="image" src="https://github.com/user-attachments/assets/920f8a4e-ac95-49db-8f4a-ed53f56c1767" />
+
 
   
 
