@@ -50,3 +50,8 @@ By following these steps, you can easily connect and manage your GitHub reposito
 - git push: Push the committed commits to GitHub.
 - git config --global user.name "name": Set the username.
 - git config --global user.email "Email" Setthe user email.
+
+# Compile C code with C complier (MinGW64) in Windows
+- [MinGW64](https://github.com/niXman/mingw-builds-binaries)
+- Win + R --> Sysdm.cpl
+- Add "C:\Users\chih7\mingw64\bin" to System-level Environment Variable "PATH"
