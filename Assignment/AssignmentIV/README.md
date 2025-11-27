@@ -46,14 +46,13 @@ Email: [ho950211@gmail.com]
 - The project uses a comprehensive Makefile that builds both C and C++ versions with proper flags:
   ```bash
   # Build both C and C++ versions
-  make all
   .\Makefile.bat
   
   # Build only C version
-  make c
+  Makefile.bat c
   
   # Build only C++ version
-  make cxx
+  Makefile.bat cxx
   ```
 
 ### Manual Compilation (if needed)
