@@ -24,7 +24,7 @@ int myHashInt(int key, int m) {
     int formula_all = static_cast<int>(m*formula); // floor 
     formula_all = ((formula_all+1) * 17 ) % m;
     formula_all = ((formula_all+1) * 13 ) % m;
-    return formula_all;  // multiplication method example
+    return formula_all;  
 }
 
 int myHashString(const std::string& str, int m) {
