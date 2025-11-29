@@ -46,3 +46,4 @@ int myHashString(const char* str, int m) {
     int hash_new = ((hash+1) * 17 ) % m;
     return hash_new ; // string hashing 
 }
+
