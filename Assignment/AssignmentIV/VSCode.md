@@ -49,7 +49,7 @@ By following these steps, you can easily connect and manage your GitHub reposito
 - git status: Tells me which files have been modified and whether there are changes ready to be committed.
 - git push: Push the committed commits to GitHub.
 - git config --global user.name "name": Set the username.
-- git config --global user.email "Email" Setthe user email.
+- git config --global user.email "Email" Set the user email.
 
 # Compile C code with C complier (MinGW64) in Windows
 - [MinGW64](https://github.com/niXman/mingw-builds-binaries)
