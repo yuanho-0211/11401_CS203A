@@ -1,4 +1,3 @@
-
 # Study Note: Stack and Queue
 
 ## Description
