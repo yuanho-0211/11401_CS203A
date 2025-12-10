@@ -1,4 +1,4 @@
-# Study Note: Stack and Queue
+# Study Note: stack and queue
 
 ## Description
 - **Stack**: It is a data structure that follows the LIFO rule. Elements are added and removed only from the top.
