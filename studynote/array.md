@@ -29,6 +29,6 @@ Array: [   ]   [   ]    [   ]     [   ]     [   ]     [   ]     [   ]
 - **Contiguous memory requirement**: For very large arrays, the system may fail to find enough contiguous space.
 
 ## Pros/Cons
-- **Pros**:Fast random access.
-- **Cons**:Insertions and deletions require shifting elements, making them costly.
+- **Pros**: Fast random access.
+- **Cons**: Insertions and deletions require shifting elements, making them costly.
 
