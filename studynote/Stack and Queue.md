@@ -39,7 +39,7 @@ Rear
 
 ### Queue
 - **Array**: O(1) enqueue/dequeue with circular buffer
-- **Linked list**: O(1) enqueue (at tail) and dequeue (at head
+- **Linked list**: O(1) enqueue at tail and dequeue at head
 
 ## Limitations
 ### Stack
