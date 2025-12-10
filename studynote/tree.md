@@ -39,7 +39,7 @@
 - **hierarchical structure**: Trees have no cycles and are commonly used for representing hierarchical relationships.
 - **Tree**: No fixed number of children. General hierarchical structure.
 - **balanced tree**: Ensures that the height difference between subtrees is minimized.
-- **BFT**:Visiting nodes level by level using a queue.
+- **BFT**: Visiting nodes level by level using a queue.
 
 
 ## Time/Space
