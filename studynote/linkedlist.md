@@ -1,7 +1,7 @@
 # Study Note: Linked List
 
 ## Description
-Linked List: Elements are stored in sequence, but not in contiguous memory locations.Each node contains data and a pointer to the next node.
+Linked List: Elements are stored in sequence, but not in contiguous memory locations. Each node contains data and a pointer to the next node.
 
 ## Visualization
 ```c
