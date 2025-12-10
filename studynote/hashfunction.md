@@ -5,7 +5,9 @@ Hash Table:The array structure where data (key–value pairs) are stored.Using a
 
 ## Visualization
 ```c
-[   ]
-[   ]
-[   ]
-[   ]
+[   ] → [data | next] → [data | next] → NULL
+[   ] → [data | next] → [data | next] → NULL
+[   ] → [data | next] → [data | next] → NULL
+[   ] → [data | next] → [data | next] → NULL
+```
+
