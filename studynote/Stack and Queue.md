@@ -5,7 +5,7 @@
 - **Queue**:It is a data structure that follows the FIFO rule. Elements are inserted at the rear and removed from the front.  
 
 ## Visualization
-- **Stack**
+### Stack
 ```c
 Top →      [   ]
            [   ]
@@ -14,7 +14,7 @@ Top →      [   ]
 Bottom →   [   ]
 
 ```
-- **Queue**
+### Queue
 ```c
 Front 
 Rear
@@ -23,37 +23,37 @@ Rear
 
 ```
 ## Characteristics
-- **Stack**
+### Stack
 - **LIFO**:Last element inserted is the first one removed.
 - **Direction**:Both operations happen at the top.
 
-- **Queue**
+### Queue
 - **FIFO**:First element inserted is the first removed.
 - **Direction**:Input at rear, output at front.
 
 
 ## Time/Space
-- **Stack**
+### Stack
 - **Array**:O(1) push/pop (if no resize)
 - **Linked list**: O(1) push/pop at head
 
-- **Queue**
+### Queue
 - **Array**:O(1) enqueue/dequeue with circular buffer
 - **Linked list**: O(1) enqueue (at tail) and dequeue (at head
 
 ## Limitations
-- **Stack**
+### Stack
 - **Overflow**:An array overflows if its capacity is exceeded.
 
-- **Queue**
+### Queue
 - **Pointer**:Array requires managing two pointers. Usually implemented as circular array to reuse space. Linked list has no overflow unless memory exhausted
 
 
 ## Pros/Cons
-- **Stack**
+### Stack
 - **Pros**:**Push and pop operations are performed efficiently.
 - **Cons**:Array may waste unused slots if not full.
 
-- **Queue**
+### Queue
 - **Pros**:**Push and pop operations are performed efficiently.
 - **Cons**:Circular array may overflow.
