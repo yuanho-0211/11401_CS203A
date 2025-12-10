@@ -1,7 +1,7 @@
 # Study Note: Hash Table
 
 ## Description
-Hash Table:The array structure where data (key–value pairs) are stored.Using a hash function to convert each key into an index.
+Hash Table: The array structure where data (key–value pairs) are stored.Using a hash function to convert each key into an index.
 
 ## Visualization
 ```c
