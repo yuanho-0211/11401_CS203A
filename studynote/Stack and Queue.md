@@ -46,7 +46,7 @@ Rear
 - **Overflow**: An array overflows if its capacity is exceeded.
 
 ### Queue
-- **Pointer**: Array requires managing two pointers. Usually implemented as circular array to reuse space. Linked list has no overflow unless memory exhausted
+- **Pointer**: Array requires managing two pointers. Usually implemented as circular array to reuse space. Linked list has no overflow unless memory exhausted.
 
 
 ## Pros/Cons
