@@ -4,6 +4,7 @@
 Array:Array are elements stored in contiguous memory locations. Each element can be accessed directly using an index. It provides constant-time access to elements. It is an efficient method.
 
 ## Visualization
+```c
 Index:   0       1        2         3         4         5         6
 
 Array: [   ]   [   ]     [   ]     [   ]     [   ]     [   ]     [   ]       
