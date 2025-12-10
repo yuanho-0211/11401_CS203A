@@ -55,5 +55,5 @@ Rear
 - **Cons**: Array may waste unused slots if not full.
 
 ### Queue
-- **Pros**: Push and pop operations are performed efficiently.
+- **Pros**: Enqueue and dequeue are efficient operations.
 - **Cons**: Circular array may overflow.
