@@ -1,7 +1,7 @@
 # Study Note: Array
 
 ## Description
-Array:Array are elements stored in contiguous memory locations. Each element can be accessed directly using an index. It provides constant-time access to elements. It is an efficient method.
+Array: Array are elements stored in contiguous memory locations. Each element can be accessed directly using an index. It provides constant-time access to elements. It is an efficient method.
 
 ## Visualization
 ```c
