@@ -8,7 +8,7 @@ Array:Array are elements stored in contiguous memory locations. Each element can
 Index:   0       1        2         3         4         5         6
 
 Array: [   ]   [   ]     [   ]     [   ]     [   ]     [   ]     [   ]       
-
+```
 
 ## Characteristics
 
