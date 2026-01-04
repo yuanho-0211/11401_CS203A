@@ -113,13 +113,13 @@ Screenshot of Min Heap (paste below):
 ###　Task: For each tree type, choose one application and explain why this tree is suitable.
 |Tree Type	|Application Example (name / context) |	Why this tree fits (properties that matter)|
 |---|---|---|
-|Binary Tree	|運算式樹	二元樹的每個節點最多有兩個子節點，適合表示二元運算。|
-|Complete Binary Tree	Heap|資料結構	完全二元樹保證每層節點都盡量填滿且靠左排列，便於用陣列表示，節點索引計算簡單，適合堆排序和優先佇列的實作。|
-|Binary Search Tree|	字典查詢	BST 的左子樹節點小於父節點，右子樹節點大於父節點，能快速搜尋。|
-|AVL Tree	|即時排行榜	AVL 樹在插入或刪除後自動平衡，可快速搜尋排名或範圍查詢，適合需要頻繁更新且查詢效率高的場景。|
-|Red-Black Tree	|程式語言標準庫的映射結構	紅黑樹是自平衡 BST，插入與刪除操作成本穩定，適合需要長期維護有序鍵值對的資料結構。|
-|Max Heap	|優先佇列	根節點永遠是最大值，可快速取得最大元素，適合事件排程、任務管理或任何需要快速存取最大元素的場景。|
-|Min Heap	|Dijkstra 最短路徑演算法	根節點為最小值，可快速找到最短距離節點，適合反覆選取最小元素的演算法，節省搜尋最小值的時間。|
+|Binary Tree	|運算式樹	|二元樹的每個節點最多有兩個子節點，適合表示二元運算。|
+|Complete Binary Tree	|Heap資料結構	|完全二元樹保證每層節點都盡量填滿且靠左排列，便於用陣列表示，節點索引計算簡單，適合堆排序和優先佇列的實作。|
+|Binary Search Tree|	字典查詢	|BST 的左子樹節點小於父節點，右子樹節點大於父節點，能快速搜尋。|
+|AVL Tree	|即時排行榜|	AVL 樹在插入或刪除後自動平衡，可快速搜尋排名或範圍查詢，適合需要頻繁更新且查詢效率高的場景。|
+|Red-Black Tree	|程式語言標準庫的映射結構	|紅黑樹是自平衡 BST，插入與刪除操作成本穩定，適合需要長期維護有序鍵值對的資料結構。|
+|Max Heap	|優先佇列	|根節點永遠是最大值，可快速取得最大元素，適合事件排程、任務管理或任何需要快速存取最大元素的場景。|
+|Min Heap	|Dijkstra 最短路徑演算法	|根節點為最小值，可快速找到最短距離節點，適合反覆選取最小元素的演算法，節省搜尋最小值的時間。|
 
 
 
