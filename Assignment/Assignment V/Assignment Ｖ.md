@@ -34,6 +34,7 @@ Definition: 一種完全二元樹，每個節點的值小於或等於其子節�
 <img width="926" height="286" alt="image" src="https://github.com/user-attachments/assets/55c79e2e-b8aa-41ab-8799-e037e8db0cd4" />
 <img width="917" height="279" alt="image" src="https://github.com/user-attachments/assets/b27b9e32-fa0e-4830-bf43-53f68f3b166c" />
 ## 2.2 Explanation of Transformations
+
 ### Fill in what new property or constraint is added at each step.
 
 From	         |To                      |	New property / constraint added                    |
