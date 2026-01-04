@@ -5,7 +5,7 @@
 | **Structure**            | Hierarchical, acyclic, rooted                        | Non-linear, can have cycles, no fixed root          |
 | **Nodes / Vertices**     | Called nodes                                         | Called vertices                                     |
 | **Edges**                | Each edge connects parent to child                   | Each edge connects any two vertices                 |
-| **Edge Direction**       | Usuallyundirected  from parent to child              | Can be directed or undirected                       |
+| **Edge Direction**       | Usually undirected                                   | Can be directed or undirected                       |
 | **Hierarchy**            | Strict parent-child relationship                     | No strict hierarchy, flexible connections           |
 | **Cycles**               | Not allowed (acyclic)                                | Allowed                                             |
 | **Connectivity**         | Always connected                                     | Can be connected or disconnected                    |
