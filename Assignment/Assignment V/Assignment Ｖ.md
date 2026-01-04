@@ -6,19 +6,19 @@
 
 - General Tree    
 Definition: 由節點組成的層級結構，每個節點可以有任意數量的子節點。根節點沒有父節點，其他節點只有一個父節點。
-2.	Binary Tree
+- Binary Tree
 Definition: 每個節點最多有兩個子節點的樹形結構，分別是左子節點與右子節點。
-3.	Complete Binary Tree
+- Complete Binary Tree
 Definition: 一種二元樹，除了最後一層外，每層節點皆填滿，最後一層節點從左到右依序排列。
-4.	Binary Search Tree (BST)
+- Binary Search Tree (BST)
 Definition: 一種二元樹，左子樹所有節點的值小於根節點，右子樹所有節點的值大於根節點。
-5.	AVL Tree
+- AVL Tree
 Definition: 自平衡的二元搜尋樹，每個節點的左、右子樹高度差不超過 1。
-6.	Red-Black Tree
+- Red-Black Tree
 Definition: 自平衡的二元搜尋樹，每個節點具有顏色，並遵守紅黑規則，根節點為黑、紅節點不能連續、從根到葉節點的黑節點數相同。
-7.	Max Heap
+- Max Heap
 Definition: 一種完全二元樹，每個節點的值大於或等於其子節點的值。根節點為最大值，適合用於優先權佇列。
-8.	Min Heap
+- Min Heap
 Definition: 一種完全二元樹，每個節點的值小於或等於其子節點的值。根節點為最小值，適合用於快速取得最小元素。
 
 ## Section 2. Tree Family Hierarchy and Transformations
