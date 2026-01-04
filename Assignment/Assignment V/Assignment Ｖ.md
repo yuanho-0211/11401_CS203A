@@ -153,15 +153,15 @@ Screenshot of Min Heap (paste below):
 
 ## Section 5. Reflection on Tree Family and Performance (Optional but recommended)
 ### Among BST, AVL, and Red-Black trees, which one would you pick for:
-### Mostly search (few updates)? Why?
+- ### Mostly search (few updates)? Why?
 
 AVL Tree，因為他是自平衡 BST，搜尋效率穩定，平衡維護的成本幾乎可以忽略，因此它能提供最快速的查找速度。
 
-### Frequent insertions and deletions? Why?
+- ### Frequent insertions and deletions? Why?
 
 Red-Black Tree，是一種自平衡二元搜尋樹，即使資料頻繁變動，也能維持穩定的搜尋和更新效率。
 
-### If you must store these 20 integers for static search only (no updates), which structure or representation would you prefer (sorted array + binary search, BST, AVL, etc.)? Why?
+- ### If you must store these 20 integers for static search only (no updates), which structure or representation would you prefer (sorted array + binary search, BST, AVL, etc.)? Why?
 
 sorted array + binary search，因為Binary search 時間複雜度是 O(log n)，不需要插入和刪除，使用陣列實作簡單。
 
