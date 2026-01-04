@@ -5,10 +5,10 @@
 ### Task: Write your own definitions for each tree type. You may use AI for learning, but rewrite in your own words.
 
 - General Tree
--  
+
 Definition: 由節點組成的層級結構，每個節點可以有任意數量的子節點。根節點沒有父節點，其他節點只有一個父節點。
 - Binary Tree
-- 
+
 Definition: 每個節點最多有兩個子節點的樹形結構，分別是左子節點與右子節點。
 - Complete Binary Tree
 Definition: 一種二元樹，除了最後一層外，每層節點皆填滿，最後一層節點從左到右依序排列。
