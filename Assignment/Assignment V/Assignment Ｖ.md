@@ -112,6 +112,7 @@ Screenshot of Min Heap (paste below):
 ##　Section 4. Application Examples
 ###　Task: For each tree type, choose one application and explain why this tree is suitable.
 |Tree Type	|Application Example (name / context) |	Why this tree fits (properties that matter)|
+|---|---|---|
 |Binary Tree	|運算式樹	二元樹的每個節點最多有兩個子節點，適合表示二元運算。|
 |Complete Binary Tree	Heap|資料結構	完全二元樹保證每層節點都盡量填滿且靠左排列，便於用陣列表示，節點索引計算簡單，適合堆排序和優先佇列的實作。|
 |Binary Search Tree|	字典查詢	BST 的左子樹節點小於父節點，右子樹節點大於父節點，能快速搜尋。|
