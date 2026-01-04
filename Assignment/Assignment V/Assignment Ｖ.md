@@ -58,6 +58,7 @@ Tool name / URL: https://treeconverter.com/
 Construction / insertion description: 每個節點最多有兩個子節點。
 
 Screenshot of Binary Tree (paste below):
+
 <img width="702" height="209" alt="image" src="https://github.com/user-attachments/assets/75eaa8fc-9299-4f52-8623-70441399f46c" />
 
 - Complete Binary Tree
@@ -66,6 +67,7 @@ Tool name / URL: https://sercankulcu.github.io/files/data_structures/slides/Bolu
 Construction / insertion description: 一種二元樹，除最後一層外，每層節點皆填滿，最後一層節點從左到右排列。
 
 Screenshot of Complete Binary Tree (paste below):
+
 <img width="555" height="331" alt="image" src="https://github.com/user-attachments/assets/6664015a-4206-48c2-b6ed-0eddc20583bd" />
 
 - Binary Search Tree (BST)
