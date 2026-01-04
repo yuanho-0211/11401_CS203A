@@ -35,15 +35,15 @@ Definition: 一種完全二元樹，每個節點的值小於或等於其子節�
 <img width="917" height="279" alt="image" src="https://github.com/user-attachments/assets/b27b9e32-fa0e-4830-bf43-53f68f3b166c" />
 ## 2.2 Explanation of Transformations
 ### Fill in what new property or constraint is added at each step.
-From	        |To                     |	New property / constraint added                    |
-|-------------|-----------------------|----------------------------------------------------|
-General Tree  |Binary Tree            |	每個節點最多有兩個子節點                             |
-Binary Tree   |	Complete Binary Tree	|除了最後一層外，每層節點皆填滿，最後一層節點從左到右排列 |
-Binary Tree   |	Binary Search Tree    |	左子樹節點 < 根節點 < 右子樹節點                     |
-BST           |	AVL Tree	            |高度平衡，每個節點左右子樹高度差 ≤ 1                   |
-BST           |	Red-Black Tree      	|自平衡，節點有紅/黑顏色，遵守紅黑規則                  |
-Binary Tree   |	Max Heap	            |完全二元樹，每個節點 ≥ 子節點                         |
-Binary Tree	  |Min Heap	              |完全二元樹，每個節點 ≤ 子節點                         |
+From	         |To                      |	New property / constraint added                    |
+|--------------|------------------------|----------------------------------------------------|
+|General Tree  |Binary Tree             |	每個節點最多有兩個子節點                             |
+|Binary Tree   |	Complete Binary Tree	|除了最後一層外，每層節點皆填滿，最後一層節點從左到右排列 |
+|Binary Tree   |	Binary Search Tree    |	左子樹節點 < 根節點 < 右子樹節點                     |
+|BST           |	AVL Tree	            |高度平衡，每個節點左右子樹高度差 ≤ 1                   |
+|BST           |	Red-Black Tree      	|自平衡，節點有紅/黑顏色，遵守紅黑規則                  |
+|Binary Tree   |	Max Heap	            |完全二元樹，每個節點 ≥ 子節點                         |
+|Binary Tree	 |Min Heap	              |完全二元樹，每個節點 ≤ 子節點                         |
 
 ## Section 3. Tree Constructions Using Given Integers
 ## Given integers (fixed for all parts):37, 142, 5, 89, 63, 117, 24, 176, 58, 133, 92, 11, 151, 72, 39, 184, 7, 101, 54, 160
