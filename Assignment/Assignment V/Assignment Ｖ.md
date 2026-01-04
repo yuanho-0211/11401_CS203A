@@ -121,6 +121,28 @@ Screenshot of Min Heap (paste below):
 |Max Heap	|優先佇列	|根節點永遠是最大值，可快速取得最大元素，適合事件排程、任務管理或任何需要快速存取最大元素的場景。|
 |Min Heap	|Dijkstra 最短路徑演算法	|根節點為最小值，可快速找到最短距離節點，適合反覆選取最小元素的演算法，節省搜尋最小值的時間。|
 
+## Section 5. Reflection on Tree Family and Performance (Optional but recommended)
+### Among BST, AVL, and Red-Black trees, which one would you pick for:
+### Mostly search (few updates)? Why?
+
+AVL Tree，因為他是自平衡 BST，搜尋效率穩定，平衡維護的成本幾乎可以忽略，因此它能提供最快速的查找速度。
+
+### Frequent insertions and deletions? Why?
+
+Red-Black Tree，是一種自平衡二元搜尋樹，即使資料頻繁變動，也能維持穩定的搜尋和更新效率。
+
+### If you must store these 20 integers for static search only (no updates), which structure or representation would you prefer (sorted array + binary search, BST, AVL, etc.)? Why?
+
+sorted array + binary search，因為Binary search 時間複雜度是 O(log n)，不需要插入和刪除，使用陣列實作簡單。
+
+## Section 6. AI Usage Log (Required)
+### Task: Record every time you ask an AI assistant about this assignment.
+
+|Index	|Date / Time	|AI Service (ChatGPT, Gemini, etc.)	|Your Full Prompt / Question |
+|----|---|---|---|
+|1 |	1214/22:17	|ChatGPT	|幫我寫general tree, binary tree, complete binary tree, binary search tree, AVL tree, red-black tree, max heap and min heap的定義|
+|2	|1214/22:43	|ChatGPT	|幫我把以下轉換製作成表格:General Tree → Binary Tree 和Binary Tree → Complete Binary Tree和Binary Tree → Binary Search Tree和BST → AVL Tree和BST → Red-Black Tree和Binary Tree → Max Heap和Binary Tree → Min Heap|
+|3	|1214/23:05|	ChatGPT|	幫我寫general tree, binary tree, complete binary tree, binary search tree, AVL tree, red-black tree, max heap and min heap的應用範例並說明原因|
 
 
 
