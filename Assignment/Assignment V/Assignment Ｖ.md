@@ -61,6 +61,7 @@ Screenshot of Binary Tree (paste below):
 
 <img width="702" height="209" alt="image" src="https://github.com/user-attachments/assets/75eaa8fc-9299-4f52-8623-70441399f46c" />
 
+
 - Complete Binary Tree
 Tool name / URL: https://sercankulcu.github.io/files/data_structures/slides/Bolum_08_Heap.html
 
@@ -70,6 +71,7 @@ Screenshot of Complete Binary Tree (paste below):
 
 <img width="555" height="331" alt="image" src="https://github.com/user-attachments/assets/6664015a-4206-48c2-b6ed-0eddc20583bd" />
 
+
 - Binary Search Tree (BST)
 Tool name / URL: https://www.cs.usfca.edu/~galles/visualization/BST.html
 
@@ -77,7 +79,9 @@ Insertion rule (e.g., “insert in given order using BST rules”): 若新值小
 ，若新值大於目前節點，往右子樹移動。左子樹節點 < 根節點 < 右子樹節點。
 
 Screenshot of BST (paste below):
+
 <img width="385" height="262" alt="image" src="https://github.com/user-attachments/assets/cafd05bb-782f-4f5a-94e1-10d8a0d1942b" />
+
 
 - AVL Tree
 Tool name / URL: https://cmps-people.ok.ubc.ca/ylucet/DS/AVLtree.html
@@ -85,7 +89,9 @@ Tool name / URL: https://cmps-people.ok.ubc.ca/ylucet/DS/AVLtree.html
 Insertion & balancing description: 自平衡的二元搜尋樹，每個節點左右子樹高度差 ≤ 1，若某節點左右子樹高度差超過 1，則透過適當的旋轉進行調整，以維持高度平衡。
 
 Screenshot of AVL Tree (paste below):
+
 <img width="373" height="183" alt="image" src="https://github.com/user-attachments/assets/38edd8c1-f9ba-44f1-a2a4-4d6e0486b95e" />
+
 
 - Red-Black Tree
 Tool name / URL: https://www.cs.usfca.edu/~galles/visualization/RedBlack.html
@@ -93,7 +99,9 @@ Tool name / URL: https://www.cs.usfca.edu/~galles/visualization/RedBlack.html
 Insertion & balancing description: 遵守紅黑規則，插入位置依 BST 規則，新插入的節點一律標記為紅色，根節點必須是黑色，若插入後違反紅黑性質，則透過重新著色與旋轉進行修正，並確保根節點為黑色。
 
 Screenshot of Red-Black Tree (paste below):
+
 <img width="542" height="179" alt="image" src="https://github.com/user-attachments/assets/56d1c14e-3717-4c60-9420-8269e0b4309c" />
+
 
 - Max Heap
 Tool name / URL: https://sercankulcu.github.io/files/data_structures/slides/Bolum_08_Heap.html
@@ -101,7 +109,9 @@ Tool name / URL: https://sercankulcu.github.io/files/data_structures/slides/Bolu
 Construction / heap-building description (e.g. heapify, insert-and-sift-up): 每個節點的值大於或等於其子節點的值。根節點為最大值。從最後一個非葉節點開始，向上進行調整，對每個節點執行 sift-down，直到整個結構滿足Max Heap 性質。
 
 Screenshot of Max Heap (paste below):
+
 <img width="555" height="331" alt="image" src="https://github.com/user-attachments/assets/5b0fd0a4-0c5d-4c0b-8bf3-28ee07132155" />
+
 
 - Min Heap
 Tool name / URL: https://sercankulcu.github.io/files/data_structures/slides/Bolum_08_Min_Heap.html
@@ -109,7 +119,9 @@ Tool name / URL: https://sercankulcu.github.io/files/data_structures/slides/Bolu
 Construction / heap-building description: 每個節點的值小於或等於其子節點的值。根節點為最小值。將新元素插入至堆的最底層最左側，若新節點值小於其父節點，則與父節點交換，持續向上比較與交換（sift-up），直到新節點大於等於父節點，或成為根節點。
 
 Screenshot of Min Heap (paste below):
+
 <img width="482" height="277" alt="image" src="https://github.com/user-attachments/assets/dc653b26-be8a-4fd9-9af9-debd0cc4a723" />
+
 
 ##　Section 4. Application Examples
 ###　Task: For each tree type, choose one application and explain why this tree is suitable.
