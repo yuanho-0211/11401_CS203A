@@ -2,7 +2,7 @@
 # Assignment V: Tree
 
 ## Section 1. Definitions of Tree Variants
-## Task: Write your own definitions for each tree type. You may use AI for learning, but rewrite in your own words.
+### Task: Write your own definitions for each tree type. You may use AI for learning, but rewrite in your own words.
 
 - General Tree    
 Definition: 由節點組成的層級結構，每個節點可以有任意數量的子節點。根節點沒有父節點，其他節點只有一個父節點。
