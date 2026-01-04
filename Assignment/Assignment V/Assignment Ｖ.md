@@ -4,7 +4,7 @@
 ## Section 1. Definitions of Tree Variants
 ## Task: Write your own definitions for each tree type. You may use AI for learning, but rewrite in your own words.
 
-1.	General Tree    
+- General Tree    
 Definition: 由節點組成的層級結構，每個節點可以有任意數量的子節點。根節點沒有父節點，其他節點只有一個父節點。
 2.	Binary Tree
 Definition: 每個節點最多有兩個子節點的樹形結構，分別是左子節點與右子節點。
