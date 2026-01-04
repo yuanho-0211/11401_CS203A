@@ -22,19 +22,19 @@ Definition: 一種完全二元樹，每個節點的值大於或等於其子節�
 Definition: 一種完全二元樹，每個節點的值小於或等於其子節點的值。根節點為最小值，適合用於快速取得最小元素。
 
 ## Section 2. Tree Family Hierarchy and Transformations
-## Task: Show how these structures are related (general → specialized). Use a simple diagram and explanations of what constraints are added at each step.
-## 2.1 Tree Family Diagram
-## You may draw this by hand and paste a photo, or use drawing tools.
-## Suggested chain example (you may extend or adjust):
-## General Tree → Binary Tree → Complete Binary Tree
-## Binary Tree → Binary Search Tree → AVL / Red-Black
-## Binary Tree → Max Heap / Min Heap
-## Your Diagram:
+### Task: Show how these structures are related (general → specialized). Use a simple diagram and explanations of what constraints are added at each step.
+### 2.1 Tree Family Diagram
+### You may draw this by hand and paste a photo, or use drawing tools.
+### Suggested chain example (you may extend or adjust):
+- General Tree → Binary Tree → Complete Binary Tree
+- Binary Tree → Binary Search Tree → AVL / Red-Black
+- Binary Tree → Max Heap / Min Heap
+### Your Diagram:
 <img width="933" height="261" alt="image" src="https://github.com/user-attachments/assets/405b9df9-cead-4599-bd89-22284564c894" />
 <img width="926" height="286" alt="image" src="https://github.com/user-attachments/assets/55c79e2e-b8aa-41ab-8799-e037e8db0cd4" />
 <img width="917" height="279" alt="image" src="https://github.com/user-attachments/assets/b27b9e32-fa0e-4830-bf43-53f68f3b166c" />
 ## 2.2 Explanation of Transformations
-## Fill in what new property or constraint is added at each step.
+### Fill in what new property or constraint is added at each step.
 From	        |To                     |	New property / constraint added                    |
 |-------------|-----------------------|----------------------------------------------------|
 General Tree  |Binary Tree            |	每個節點最多有兩個子節點                             |
