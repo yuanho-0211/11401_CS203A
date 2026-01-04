@@ -139,8 +139,8 @@ Screenshot of Min Heap (paste below):
 <img width="482" height="277" alt="image" src="https://github.com/user-attachments/assets/dc653b26-be8a-4fd9-9af9-debd0cc4a723" />
 
 
-##　Section 4. Application Examples
-###　Task: For each tree type, choose one application and explain why this tree is suitable.
+## Section 4. Application Examples
+### Task: For each tree type, choose one application and explain why this tree is suitable.
 |Tree Type	|Application Example (name / context) |	Why this tree fits (properties that matter)|
 |---|---|---|
 |Binary Tree	|運算式樹	|二元樹的每個節點最多有兩個子節點，適合表示二元運算。|
