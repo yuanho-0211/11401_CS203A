@@ -49,10 +49,10 @@ From	         |To                      |	New property / constraint added        
 |Binary Tree	 |Min Heap	              |完全二元樹，每個節點 ≤ 子節點                         |
 
 ## Section 3. Tree Constructions Using Given Integers
-## Given integers (fixed for all parts):37, 142, 5, 89, 63, 117, 24, 176, 58, 133, 92, 11, 151, 72, 39, 184, 7, 101, 54, 160
-## Task: For each tree type below, construct the tree using these integers, take a screenshot of the tree from your chosen tool, record the tool name/URL, and describe the insertion / heap-building procedure.
+### Given integers (fixed for all parts):37, 142, 5, 89, 63, 117, 24, 176, 58, 133, 92, 11, 151, 72, 39, 184, 7, 101, 54, 160
+### Task: For each tree type below, construct the tree using these integers, take a screenshot of the tree from your chosen tool, record the tool name/URL, and describe the insertion / heap-building procedure.
 
-3.1 Binary Tree
+- Binary Tree
 Tool name / URL: https://treeconverter.com/
 
 Construction / insertion description: 每個節點最多有兩個子節點。
@@ -60,7 +60,7 @@ Construction / insertion description: 每個節點最多有兩個子節點。
 Screenshot of Binary Tree (paste below):
 <img width="702" height="209" alt="image" src="https://github.com/user-attachments/assets/75eaa8fc-9299-4f52-8623-70441399f46c" />
 
-3.2 Complete Binary Tree
+- Complete Binary Tree
 Tool name / URL: https://sercankulcu.github.io/files/data_structures/slides/Bolum_08_Heap.html
 
 Construction / insertion description: 一種二元樹，除最後一層外，每層節點皆填滿，最後一層節點從左到右排列。
@@ -68,7 +68,7 @@ Construction / insertion description: 一種二元樹，除最後一層外，每
 Screenshot of Complete Binary Tree (paste below):
 <img width="555" height="331" alt="image" src="https://github.com/user-attachments/assets/6664015a-4206-48c2-b6ed-0eddc20583bd" />
 
-3.3 Binary Search Tree (BST)
+- Binary Search Tree (BST)
 Tool name / URL: https://www.cs.usfca.edu/~galles/visualization/BST.html
 
 Insertion rule (e.g., “insert in given order using BST rules”): 若新值小於目前節點，往左子樹移動
@@ -77,7 +77,7 @@ Insertion rule (e.g., “insert in given order using BST rules”): 若新值小
 Screenshot of BST (paste below):
 <img width="385" height="262" alt="image" src="https://github.com/user-attachments/assets/cafd05bb-782f-4f5a-94e1-10d8a0d1942b" />
 
-3.4 AVL Tree
+- AVL Tree
 Tool name / URL: https://cmps-people.ok.ubc.ca/ylucet/DS/AVLtree.html
 
 Insertion & balancing description: 自平衡的二元搜尋樹，每個節點左右子樹高度差 ≤ 1，若某節點左右子樹高度差超過 1，則透過適當的旋轉進行調整，以維持高度平衡。
@@ -85,7 +85,7 @@ Insertion & balancing description: 自平衡的二元搜尋樹，每個節點左
 Screenshot of AVL Tree (paste below):
 <img width="373" height="183" alt="image" src="https://github.com/user-attachments/assets/38edd8c1-f9ba-44f1-a2a4-4d6e0486b95e" />
 
-3.5 Red-Black Tree
+- Red-Black Tree
 Tool name / URL: https://www.cs.usfca.edu/~galles/visualization/RedBlack.html
 
 Insertion & balancing description: 遵守紅黑規則，插入位置依 BST 規則，新插入的節點一律標記為紅色，根節點必須是黑色，若插入後違反紅黑性質，則透過重新著色與旋轉進行修正，並確保根節點為黑色。
@@ -93,7 +93,7 @@ Insertion & balancing description: 遵守紅黑規則，插入位置依 BST 規�
 Screenshot of Red-Black Tree (paste below):
 <img width="542" height="179" alt="image" src="https://github.com/user-attachments/assets/56d1c14e-3717-4c60-9420-8269e0b4309c" />
 
-3.6 Max Heap
+- Max Heap
 Tool name / URL: https://sercankulcu.github.io/files/data_structures/slides/Bolum_08_Heap.html
 
 Construction / heap-building description (e.g. heapify, insert-and-sift-up): 每個節點的值大於或等於其子節點的值。根節點為最大值。從最後一個非葉節點開始，向上進行調整，對每個節點執行 sift-down，直到整個結構滿足Max Heap 性質。
@@ -101,7 +101,7 @@ Construction / heap-building description (e.g. heapify, insert-and-sift-up): 每
 Screenshot of Max Heap (paste below):
 <img width="555" height="331" alt="image" src="https://github.com/user-attachments/assets/5b0fd0a4-0c5d-4c0b-8bf3-28ee07132155" />
 
-3.7 Min Heap
+- Min Heap
 Tool name / URL: https://sercankulcu.github.io/files/data_structures/slides/Bolum_08_Min_Heap.html
 
 Construction / heap-building description: 每個節點的值小於或等於其子節點的值。根節點為最小值。將新元素插入至堆的最底層最左側，若新節點值小於其父節點，則與父節點交換，持續向上比較與交換（sift-up），直到新節點大於等於父節點，或成為根節點。
@@ -110,7 +110,15 @@ Screenshot of Min Heap (paste below):
 <img width="482" height="277" alt="image" src="https://github.com/user-attachments/assets/dc653b26-be8a-4fd9-9af9-debd0cc4a723" />
 
 ##　Section 4. Application Examples
-##　Task: For each tree type, choose one application and explain why this tree is suitable.
+###　Task: For each tree type, choose one application and explain why this tree is suitable.
+|Tree Type	|Application Example (name / context) |	Why this tree fits (properties that matter)|
+|Binary Tree	|運算式樹	二元樹的每個節點最多有兩個子節點，適合表示二元運算。|
+|Complete Binary Tree	Heap|資料結構	完全二元樹保證每層節點都盡量填滿且靠左排列，便於用陣列表示，節點索引計算簡單，適合堆排序和優先佇列的實作。|
+|Binary Search Tree|	字典查詢	BST 的左子樹節點小於父節點，右子樹節點大於父節點，能快速搜尋。|
+|AVL Tree	|即時排行榜	AVL 樹在插入或刪除後自動平衡，可快速搜尋排名或範圍查詢，適合需要頻繁更新且查詢效率高的場景。|
+|Red-Black Tree	|程式語言標準庫的映射結構	紅黑樹是自平衡 BST，插入與刪除操作成本穩定，適合需要長期維護有序鍵值對的資料結構。|
+|Max Heap	|優先佇列	根節點永遠是最大值，可快速取得最大元素，適合事件排程、任務管理或任何需要快速存取最大元素的場景。|
+|Min Heap	|Dijkstra 最短路徑演算法	根節點為最小值，可快速找到最短距離節點，適合反覆選取最小元素的演算法，節省搜尋最小值的時間。|
 
 
 
