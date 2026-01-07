@@ -134,6 +134,12 @@ Access element: matrix[1][2] → 6
 - **Pros**: Fast random access.
 - **Cons**: Insertions and deletions require shifting elements, making them costly.
 
+## Key Takeaways
+- Array provides fast and direct access using index
+- Memory is contiguous and fixed in size
+- Best choice when size is known and access speed is critical
+- Understanding arrays is essential before learning other data structures
+
 ## Summary
 - Fast access, simple structure
 - Fixed size, costly insert/delete
