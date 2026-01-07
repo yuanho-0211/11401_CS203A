@@ -61,7 +61,7 @@
 - Pros: Fast O(1) edge lookup
 - Cons: Wastes space for sparse graphs
 
-  **Adjacency List**
+**Adjacency List**
 - Array of lists, list[i] stores neighbors of vertex i
 - Space Complexity: O(V + E)
 - Pros: Space efficient for sparse graphs
