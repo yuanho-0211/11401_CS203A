@@ -72,6 +72,50 @@ After : [10, 30, 40]
 - Size changes often
 - Very large data requiring non-contiguous memory
 
+## Memory Representation
+- Array elements are stored continuously in memory
+- All elements have the same data type, so each element occupies the same amount of memory
+- Memory address of an element can be calculated directly
+
+## Index Out of Bounds
+- Valid index range: 0 to size - 1
+```c
+int arr[5];
+arr[5] = 10;   // invalid
+arr[-1] = 20;  // invalid
+```
+
+## Static Array vs Dynamic Array
+### Static Array
+- Size fixed at declaration
+- Example:
+```c
+int arr[10];
+```
+### Dynamic Array
+- Size determined at runtime
+- Can be resized (with extra cost)
+- Example:
+```c
+int* arr = (int*)malloc(n * sizeof(int));
+```
+### Multidimensional Array
+- Arrays can have more than one dimension
+- Commonly used for tables or matrices
+- Example (2D array):
+```c
+int matrix[2][3] = {
+    {1, 2, 3},
+    {4, 5, 6}
+};
+```
+Access element: matrix[1][2] → 6
+
+## Common Mistakes
+- Assuming index starts from 1
+- Forgetting array size is fixed
+- Accessing out-of-bounds index
+- Confusing array length with last index
 
 ## Time/Space
 - **Access**: O(1)
