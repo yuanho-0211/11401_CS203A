@@ -15,6 +15,64 @@ Array: [   ]   [   ]    [   ]     [   ]     [   ]     [   ]     [   ]
 - **Fixed size**: The size of an array is determined at creation and cannot be changed dynamically (in static arrays).
 - **Contiguous memory allocation**: Elements are stored in contiguous memory locations.
 
+## Basic Example
+
+```c
+int arr[5] = {10, 20, 30, 40, 50};
+```
+- arr[0] is the first element
+- arr[4] is the last element
+- Index always starts from 0
+
+## How to Access Elements
+
+```c
+int x = arr[2];  // x = 30
+arr[1] = 25;     // update element
+```
+
+- Direct access by index
+- No need to loop to find the value
+
+## Traversing an Array
+
+```c
+for (int i = 0; i < 5; i++) {
+    printf("%d ", arr[i]);
+}
+```
+- Used to visit every element
+- Time complexity: O(n)
+
+## Insert Operation (Insert 25 at index 2)
+
+```c
+Before: [10, 20, 30, 40]
+After : [10, 20, 25, 30, 40]
+```
+- Elements after index must shift right
+- Time complexity: O(n)
+
+## Delete Operation (Delete element at index 1)
+
+```c
+Before: [10, 20, 30, 40]
+After : [10, 30, 40]
+```
+- Elements must shift left
+- Time complexity: O(n)
+
+## When to Use Array
+- Size is known in advance
+- Need fast access by index
+- Data stored sequentially
+
+## When Not to Use Array
+- Frequent insert/delete in the middle
+- Size changes often
+- Very large data requiring non-contiguous memory
+
+
 ## Time/Space
 - **Access**: O(1)
 - **Update**: O(1)
@@ -32,3 +90,7 @@ Array: [   ]   [   ]    [   ]     [   ]     [   ]     [   ]     [   ]
 - **Pros**: Fast random access.
 - **Cons**: Insertions and deletions require shifting elements, making them costly.
 
+## Summary
+- Fast access, simple structure
+- Fixed size, costly insert/delete
+- Foundation of many other data structures
