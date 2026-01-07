@@ -6,6 +6,7 @@
 - **Undirected graph**: Edges have no direction; the connection between two vertices is bidirectional.
 - **Directed graph (digraph)**: Edges have direction, representing one-way relationships.
 - **Weighted graph**: Each edge is associated with a weight (cost, distance, or time).
+- **Unweighted Graph**: All edges are considered equal (weight = 1).
 
 ## Visualization
 
@@ -36,6 +37,15 @@
     |         \
     C --4--  D
 ```
+
+## Types of Graphs
+- Simple Graph: No loops, no multiple edges between same vertices
+- Multigraph: Can have multiple edges between same pair of vertices
+- Cyclic Graph: Contains at least one cycle
+- Acyclic Graph: No cycles (e.g., DAG – Directed Acyclic Graph)
+- Connected Graph: All vertices are reachable from any other vertex
+- Disconnected Graph: Some vertices cannot be reached from others
+ -Complete Graph: Every pair of vertices is connected by an edge
 
 ## Characteristics
 
