@@ -112,7 +112,7 @@ Three cases:
 - Game Trees: AI decision making (e.g., chess)
 
 ## Key Takeaways
--Tree = non-linear, hierarchical, unlike arrays or linked lists
+- Tree = non-linear, hierarchical, unlike arrays or linked lists
 - Binary tree = at most 2 children per node
 - Binary Search Tree = ordered → efficient search/insert/delete
 - Balanced trees ensure O(log n) operations
