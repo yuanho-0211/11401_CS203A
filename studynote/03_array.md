@@ -97,7 +97,7 @@ arr[-1] = 20;  // invalid
 
 - Size fixed at declaration
 - Allocated on the stack (typically)
--Fast access
+- Fast access
 -Cannot be resized
 - Example:
 ```c
