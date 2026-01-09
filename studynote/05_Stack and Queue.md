@@ -1,11 +1,15 @@
 # Study Note: Stack and Queue
 
 ## Description
+
 - **Stack**: It is a data structure that follows the LIFO rule. Elements are added and removed only from the top.
+  
 - **Queue**: It is a data structure that follows the FIFO rule. Elements are inserted at the rear and removed from the front.  
 
 ## Visualization
+
 ### Stack
+
 ```c
 Top →      [   ]
            [   ]
@@ -14,7 +18,9 @@ Top →      [   ]
 Bottom →   [   ]
 
 ```
+
 ### Queue
+
 ```c
 Front 
 Rear
@@ -23,17 +29,21 @@ Rear
 
 ```
 ## Characteristics
+
 ### Stack
+
 - **LIFO**: Last element inserted is the first one removed.
 - **Direction**: Both operations happen at the top.
 - Top pointer controls operations
 
 ### Queue
+
 - **FIFO**: First element inserted is the first removed.
 - **Direction**: Input at rear, output at front.
 - Front & Rear pointers
 
 ## ADT View
+
 ### ADT Stack
 
 - CreateS(size)
@@ -53,30 +63,51 @@ Rear
 - Front()
 
 ## Types -Stack
+
 ### Array-based Stack
+
 - Fixed size or dynamic (resizable)
 - Top index points to last element
 - Overflow possible
 
 ### Linked-list Stack
+
 - Dynamic size
 - Top pointer points to head node
 - No overflow unless memory full
 - Extra pointer overhead
 
 ## Types -Queue
+
 ### Simple Queue (Array)
+
 - Fixed size
 - Dequeue shifts elements left → O(n)
 
 ### Circular Queue
+
 - Reuses empty slots → O(1) enqueue/dequeue
 
 ### Linked-list Queue
+
 - Dynamic size, uses head/tail pointers
 
+## Complexity Considerations
+
+| Structure | Array | Linked List | Notes                                                    |
+| --------- | ----- | ----------- | -------------------------------------------------------- |
+| Stack     | O(1)  | O(1)        | Array may waste space, linked list has pointer overhead  |
+| Queue     | O(1)  | O(1)        | Circular array prevents shifting; linked list is dynamic |
+
+### Memory trade-offs:
+
+- Array: contiguous memory, may need resizing
+- Linked list: non-contiguous, dynamic, extra pointer overhead
+
 ## Operations
+
 ## Stack Operations
+
 | Operation          | Description             | Time Complexity |
 | ------------------ | ----------------------- | --------------- |
 | `push(x)`          | Add element x at top    | O(1)            |
@@ -85,6 +116,7 @@ Rear
 | `isEmpty()`        | Check if stack is empty | O(1)            |
 
 ## Queue Operations
+
 | Operation            | Description               | Time Complexity                         |
 | -------------------- | ------------------------- | --------------------------------------- |
 | `enqueue(x)`         | Add element at rear       | O(1) with circular array or linked list |
@@ -95,6 +127,7 @@ Rear
 ### Implementation
 
 ### Stack (Array)
+
 ```c
 push(x):
 if top == MAX-1 → overflow
@@ -106,6 +139,7 @@ else return stack[top--]
 ```
 
 ### Queue (Circular Array)
+
 ```c
 enqueue(x):
 rear = (rear+1)%MAX
@@ -119,7 +153,9 @@ return queue[front]
 - Full: (rear+1)%MAX == front
 
 ## Linked List Version
+
 ### Stack
+
 - Push → insert at head
 - Pop → remove head
 
@@ -129,61 +165,80 @@ return queue[front]
 - Dequeue → remove head
 
 ### Special case:
+
 When queue becomes empty → rear = NULL
 
 ## Time/Space
+
 ### Stack
+
 - **Array**: O(1) push/pop (if no resize)
 - **Linked list**: O(1) push/pop at head
 
 ### Queue
+
 - **Array**: O(1) enqueue/dequeue with circular buffer
 - **Linked list**: O(1) enqueue at tail and dequeue at head
 
 ## Time / Space
+
 | Structure | Array | Linked List |
 | --------- | ----- | ----------- |
 | Stack     | O(1)  | O(1)        |
 | Queue     | O(1)  | O(1)        |
 
 ### Space:
+
 - Array: fixed, may waste
 - Linked list: pointer overhead
 
 ## Limitations
+
 ### Stack
+
 - **Overflow**: An array overflows if its capacity is exceeded.
 
 ### Queue
+
 - **Pointer**: Array requires managing two pointers. Usually implemented as circular array to reuse space. Linked list has no overflow unless memory exhausted.
 
 
 ## Pros/Cons
+
 ### Stack
+
 - **Pros**: Push and pop operations are performed efficiently.
 - **Cons**: Array may waste unused slots if not full.
 
 ### Queue
+
 - **Pros**: Enqueue and dequeue are efficient operations.
 - **Cons**: Circular array may overflow.
 
 ## Common Mistakes
+
 - Stack: Forgetting to update top pointer after push/pop
 - Queue: Forgetting to wrap-around indices in circular array
 - Not checking empty/full conditions
 - Memory leaks in linked list implementations
 
 ## Applications
+
 ### Stack
 
-- Undo/Redo functionality
+-Browser history (back/forward)
+- Undo/redo functionality in editors
+- Function call stack (recursion)
+- Syntax parsing (compilers)
+- Expression evaluation (calculator apps)
 
 ### Queue
 
-- process scheduling
--BFS (Breadth First Search)
--task scheduling
-
+- CPU scheduling (round-robin, process queues)
+- BFS traversal in graphs
+- Task management systems
+- Print job management
+- Event handling in GUI systems
 
 ## Key Takeaways
 
