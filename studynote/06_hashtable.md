@@ -62,7 +62,6 @@ Hash index = 123 % 10 = 3
 h(k) = floor(m * (k * A % 1))
 ```
 ### Characteristics:
-- Table size does not need to be prime.
 - Produces more uniform distribution.
 
 ### Example:
