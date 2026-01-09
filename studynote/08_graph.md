@@ -101,10 +101,12 @@ Graphical representation:
 
 ### Adjacency List
 
+```c
 A: B → C
 B: A → D
 C: A → D
 D: B → C
+```
 
 - Explanation: Each node lists its connected nodes.
 - More space-efficient for sparse graphs.
