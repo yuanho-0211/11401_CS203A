@@ -199,7 +199,7 @@ Bucket[index] → Node1 → Node2 → Node3 → NULL
 - **Search**: O(1)
 - **Insert**: O(1)
 - **Delete**: O(1)
-- 
+  
 ### Chaining
 
 | Operation | Average  | Worst |
