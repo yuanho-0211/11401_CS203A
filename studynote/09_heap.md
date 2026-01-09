@@ -39,7 +39,6 @@
 - **array representation**: Heaps are commonly implemented using arrays.
 - No ordering between siblings → only guarantees parent-child relation
 - Efficient root access → O(1) to get max/min
-- No ordering between siblings → only guarantees parent-child relation
 - Common applications: Priority queue, scheduling, sorting
 
 ## Heap Operations
