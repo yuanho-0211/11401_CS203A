@@ -31,6 +31,7 @@
 ```
 - Each edge has a direction.
 - Movement is restricted to the arrow direction.
+
 ### Weighted graph
 
 ```c
@@ -42,7 +43,9 @@
 ```
 - Numbers on edges represent weights.
 - Used in shortest-path problems like Dijkstra’s algorithm.
+  
 ## Types of Graphs
+
 - Simple Graph: No loops, no multiple edges between same vertices
 - Multigraph: Can have multiple edges between same pair of vertices
 - Cyclic Graph: Contains at least one cycle
@@ -57,7 +60,8 @@
 - **Cycles allowed**: Graphs may contain cycles.
 - **Connected / Disconnected**: A graph can be connected or disconnected.
 
-**Representation**:
+## **Representation**:
+
 **Adjacency Matrix**
 - A 2D array matrix[V][V]
 - matrix[i][j] = 1 if an edge exists
@@ -80,6 +84,7 @@
 - Traversing neighbors costs O(V)
 
 **Adjacency List**
+
 - An array of lists
 - Each index represents a vertex
 - Each list stores neighboring vertices
@@ -98,6 +103,11 @@
 
 - Slower edge lookup (O(degree))
 - Slightly more complex implementation
+
+## Sparse vs Dense Graph:
+
+- Sparse: E ≪ V², Adjacency List preferred
+- Dense: E ≈ V², Adjacency Matrix preferred
   
 ## Traversal
 
@@ -111,6 +121,7 @@
 - Shortest path
 - Network broadcasting
 - Level-order traversal
+- Checking bipartiteness
   
 **DFS (Depth-First Search)**:
 - Explores as deep as possible before backtracking.
@@ -122,13 +133,18 @@
 - Cycle detection
 - Topological sorting
 - Connected components
+- Detecting strongly connected components 
 
 ## Time / Space Complexity
 
-- Adjacency Matrix Space Complexity: O(V²)
-- Adjacency List Space Complexity: O(V + E)
+| Representation   | Space Complexity | Edge Lookup | Traversal |
+| ---------------- | ---------------- | ----------- | --------- |
+| Adjacency Matrix | O(V²)            | O(1)        | O(V²)     |
+| Adjacency List   | O(V + E)         | O(degree)   | O(V + E)  |
+
 
 ## Operations
+
 | Operation          | Adjacency Matrix | Adjacency List |
 | ------------------ | ---------------- | -------------- |
 | Check edge         | O(1)             | O(degree)      |
@@ -142,18 +158,31 @@
 
 **Implementation**: Requires careful handling of visited states and cycles.
 
+## Applications
+
+- Social Networks: Friends as vertices, relationships as edges
+- Web Graphs: Pages as nodes, hyperlinks as directed edges
+- Navigation Systems: Cities as vertices, roads as weighted edges
+- Dependency Resolution: Tasks as vertices, dependencies as directed edges
+- Networking: Routers, switches, and data routing
+- Recommendation Systems: Users/items as nodes, interactions as weighted edges
+
 ## Pros / Cons
 
 **Pros**:
 
-- Highly flexible.
-- Capable of representing complex algorithms and implementations.
+- Highly flexible, models complex relationships
+- Supports wide range of algorithms
+- Can represent both static and dynamic networks
   
  **Cons**:
-- More complex algorithms and implementations.
-- Performance and memory usage must be carefully considered for large graphs.
+ 
+- Algorithm implementation can be complex
+- Memory and performance must be considered for large graphs
+- Handling cycles, weighted edges, and dynamic updates requires care
 
 ## Key Takeaways
+
 - Graph = non-linear, flexible, complex relationships
 - Representation choice matters: matrix vs list
 - Traversal methods: BFS for level-order / shortest path, DFS for deep exploration / cycle detection
