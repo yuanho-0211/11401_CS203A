@@ -157,7 +157,7 @@ int arr[4] = {10, 20, 30, 40};
 ```
 
 - Stored in contiguous memory locations
-- 
+  
 ## Two-Dimensional Array (Row-Major Order)
 
 ```c
