@@ -31,7 +31,7 @@
 ### binary tree
 
 ```c
-             A
+            A
           /   \
         B       C
        / \     / \
