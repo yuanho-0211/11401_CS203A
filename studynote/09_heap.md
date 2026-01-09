@@ -72,6 +72,13 @@
 - **Root**: root element is min or max.
 - **Modifications**: Trees require careful operations in many steps.
 
+## Applications
+- Priority Queue: Tasks processed by priority
+- CPU Scheduling: Shortest job or highest priority first
+- Heapsort: Sorting with guaranteed O(n log n)
+- Graph Algorithms: Dijkstra’s, Prim’s algorithm
+- Event-driven simulation
+
 ## Pros
 
 - Efficient access to the minimum or maximum element.
