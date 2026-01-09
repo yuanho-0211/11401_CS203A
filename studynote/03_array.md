@@ -219,7 +219,7 @@ for (int i = 0; i < n; i++) {
 - Heap
 - Hash Table
 - Graph adjacency matrix
-- 
+  
 ## Common Mistakes
 
 - Assuming index starts from 1
