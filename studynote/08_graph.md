@@ -67,6 +67,48 @@
 - matrix[i][j] = 1 if an edge exists
 - For weighted graphs: matrix[i][j] = weight
 
+## Example:
+Consider a simple undirected graph with nodes A, B, C, D and edges:
+
+```c
+A ↔ B
+A ↔ C
+B ↔ D
+C ↔ D
+```
+
+Graphical representation:
+
+```c
+    A
+   / \
+  B---C
+   \ /
+    D
+```
+
+### Adjacency Matrix
+
+|   | A | B | C | D |
+| - | - | - | - | - |
+| A | 0 | 1 | 1 | 0 |
+| B | 1 | 0 | 0 | 1 |
+| C | 1 | 0 | 0 | 1 |
+| D | 0 | 1 | 1 | 0 |
+
+- Explanation: Rows represent the starting node, columns represent the ending node.
+- 1 indicates an edge exists; 0 indicates no edge.
+
+### Adjacency List
+
+A: B → C
+B: A → D
+C: A → D
+D: B → C
+
+- Explanation: Each node lists its connected nodes.
+- More space-efficient for sparse graphs.
+
 ### Properties
 
 - Space Complexity: O(V²)
