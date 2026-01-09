@@ -10,8 +10,7 @@
 - **Heap (Min/Max)**: Complete binary tree where parent is smaller/larger than children
 - **Trie (Prefix Tree)**: Tree for storing strings, useful for autocomplete/dictionary
 - **Segment Tree / Interval Tree**: Tree for range queries
-
-B-Tree / B+ Tree: Balanced trees for databases / file systems
+- B-Tree / B+ Tree: Balanced trees for databases / file systems
 ## Visualization
 ### tree
 ```c
@@ -52,12 +51,36 @@ B-Tree / B+ Tree: Balanced trees for databases / file systems
 ```
 Height difference between left and right subtree ≤ 1
 
+## Terminology
+| Term             | Definition                 |
+| ---------------- | -------------------------- |
+| Root             | Topmost node               |
+| Parent           | Node with children         |
+| Child            | Node derived from a parent |
+| Leaf             | Node with no children      |
+| Sibling          | Nodes sharing same parent  |
+| Edge             | Connection between nodes   |
+| Level            | Distance from root         |
+| Height           | Longest path to leaf       |
+| Degree (Fan-out) | Number of children         |
+
+## Tree Family Hierarchy
+
+| Level | Type         | Constraint     |
+| ----- | ------------ | -------------- |
+| 1     | Tree         | No restriction |
+| 2     | Binary Tree  | ≤ 2 children   |
+| 3     | BST          | Ordering rule  |
+| 4     | Balanced BST | Height control |
+
+
 ## Characteristics
 
 - **hierarchical structure**: Trees have no cycles and are commonly used for representing hierarchical relationships.
 - **Tree**: No fixed number of children. General hierarchical structure.
 - **balanced tree**: Ensures that the height difference between subtrees is minimized.
 - **BFT**: Visiting nodes level by level using a queue.
+- No cycles.
 
 ## Traversal Methods
 
@@ -67,6 +90,27 @@ Height difference between left and right subtree ≤ 1
 | **In-order**          | Visit left → root → right          | Left-root-right (BST gives sorted order) |
 | **Post-order**        | Visit left → right → root          | Root last                                |
 | **Level-order (BFT)** | Visit level by level using a queue | BFS                                      |
+
+## Traversal Example
+For tree:
+```c
+    A
+   / \
+  B   C
+```
+| Traversal   | Result |
+| ----------- | ------ |
+| Pre-order   | A B C  |
+| In-order    | B A C  |
+| Post-order  | B C A  |
+| Level-order | A B C  |
+
+## Tree Representation
+- Parent array
+- Child list
+- Left-child right-sibling
+- Binary tree conversion
+- Array representation (heap style)
 
 ## Insert/Delete in BST
 ### Insert
@@ -84,14 +128,39 @@ Three cases:
 - After insert/delete, may need rotations to maintain balance.
 
 ## Balanced vs Unbalanced Trees
+```c
+Balanced:        Unbalanced:
+
+   8                1
+  / \                \
+ 4  12                2
+                       \
+                        3
+```
 - Balanced Tree: AVL, Red-Black, ensures O(log n) operations
 - Unbalanced Tree: Can degenerate to linked list → O(n) operations
+
+### Balanced Trees
+| Type      | Rule                  |
+| --------- | --------------------- |
+| AVL       | Height difference ≤ 1 |
+| Red-Black | Color rules           |
+| B-Tree    | Multi-key nodes       |
+
 
 
 ## Time/Space
 
 - **Insert**: O(log ｎ)
 - **Delete**: O(log ｎ)
+
+## ADT: Binary Tree
+- BinaryTree Create()
+- IsEmpty(bt)
+- MakeBT(left, data, right)
+- Lchild(bt)
+- Rchild(bt)
+- Data(bt)
 
 
 ## Limitations
