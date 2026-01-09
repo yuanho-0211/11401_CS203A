@@ -18,6 +18,8 @@
     |       |
     C ----- D
 ```
+- All connections are bidirectional.
+- Traversal can move freely in either direction along an edge.
 
 ### Directed graph
 
@@ -27,7 +29,8 @@
     |       v
     D  <--  C
 ```
-
+- Each edge has a direction.
+- Movement is restricted to the arrow direction.
 ### Weighted graph
 
 ```c
@@ -37,7 +40,8 @@
     |         \
     C --4--  D
 ```
-
+- Numbers on edges represent weights.
+- Used in shortest-path problems like Dijkstra’s algorithm.
 ## Types of Graphs
 - Simple Graph: No loops, no multiple edges between same vertices
 - Multigraph: Can have multiple edges between same pair of vertices
@@ -55,29 +59,69 @@
 
 **Representation**:
 **Adjacency Matrix**
-- 2D array matrix[V][V]
-- matrix[i][j] = 1 if edge exists (or weight for weighted graph)
+- A 2D array matrix[V][V]
+- matrix[i][j] = 1 if an edge exists
+- For weighted graphs: matrix[i][j] = weight
+
+### Properties
+
 - Space Complexity: O(V²)
-- Pros: Fast O(1) edge lookup
-- Cons: Wastes space for sparse graphs
+- Edge lookup: O(1)
+
+### Advantages
+
+- Very fast edge existence check
+- Simple to implement
+- Suitable for dense graphs
+
+### Disadvantages
+
+- Wastes memory for sparse graphs
+- Traversing neighbors costs O(V)
 
 **Adjacency List**
-- Array of lists, list[i] stores neighbors of vertex i
-- Space Complexity: O(V + E)
-- Pros: Space efficient for sparse graphs
-- Cons: Edge lookup O(degree)
+- An array of lists
+- Each index represents a vertex
+- Each list stores neighboring vertices
 
+### Properties
+
+- Space Complexity: O(V + E)
+
+### Advantages
+
+- Efficient for sparse graphs
+- Faster traversal (BFS / DFS)
+- Easy to scale to large graphs
+
+### Disadvantages
+
+- Slower edge lookup (O(degree))
+- Slightly more complex implementation
+  
 ## Traversal
 
 **BFS (Breadth-First Search)**:
 - Visits vertices level by level.
 - Uses a **queue**
 - Commonly used for shortest paths in unweighted graphs.
+
+### Applications
+
+- Shortest path
+- Network broadcasting
+- Level-order traversal
   
 **DFS (Depth-First Search)**:
 - Explores as deep as possible before backtracking.
 - Uses a **stack** or recursion.
 - Commonly used for cycle detection and topological sorting.
+
+### Applications
+
+- Cycle detection
+- Topological sorting
+- Connected components
 
 ## Time / Space Complexity
 
