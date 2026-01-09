@@ -1,8 +1,8 @@
 # Study Note: Hash Table
 
 ## Description
-Hash Table: The array structure where data (key–value pairs) are stored.Using a hash function to convert each key into an index.
-
+Hash Table: A Hash Table is a data structure that stores key–value pairs by using a hash function to map each key to an index in an array.
+Its goal is to achieve constant-time average performance for search, insertion, and deletion.
 ## Visualization
 ```c
 
@@ -18,12 +18,51 @@ bucket[index]
 
 - **Collision handling**: Using chaining or open addressing.
 - **Hash function**: Hash function converts keys into bucket indexes.
+- Structure: Array + Linked List (or probing array)
+- Index-based access
+- Unique keys
+- Dynamic resizing supported
+- Unordered data
+
+### Explanation:
+
+- The array represents buckets.
+- Each bucket may contain a linked list (chaining).
+- The index is computed from the hash function.
 
 ## Load Factor
 - Definition: α = n / number_of_buckets
+```c
+α = n / m
+n = number of elements
+m = number of buckets
+
+```
 - Low load factor → faster, more memory
 - High load factor → slower, more collisions
 - Common strategy: resize table when α > 0.7
+
+| Load Factor | Effect                  |
+| ----------- | ----------------------- |
+| Low α       | Faster, more memory     |
+| High α      | Slower, more collisions |
+
+
+## Hash Function
+
+- A hash function converts a key into an integer index:
+```c
+index = hash(key) % table_size
+```
+###A good hash function should be:
+- Deterministic
+- Uniformly distributed
+- Efficient to compute
+
+### Table Size
+
+- Prime numbers are preferred for table size (e.g., 101, 1009, 10007)
+- This reduces repeated patterns and collisions
 
 ## Collision Handling
 ### Chaining
@@ -33,12 +72,20 @@ Bucket[index] → Node1 → Node2 → Node3 → NULL
 ```
 - Easy to implement
 - Can handle unlimited collisions (linked list grows)
+- Performance degrades if chains become long
 
 ### Open Addressing
 
 - Linear Probing: Check next slot sequentially
 - Quadratic Probing: Check next slot with quadratic offs
 - Double Hashing: Use second hash function to find slot
+
+| Method            | Formula       | Characteristics                     |
+| ----------------- | ------------- | ----------------------------------- |
+| Linear Probing    | (h(k)+i)%m    | Simple, primary clustering          |
+| Quadratic Probing | h(k)+i²       | Less clustering, may skip slots     |
+| Double Hashing    | h1(k)+i·h2(k) | Best distribution, more computation |
+
 
 ## Operations
 ## Insert
@@ -63,6 +110,24 @@ Bucket[index] → Node1 → Node2 → Node3 → NULL
 - **Search**: O(1)
 - **Insert**: O(1)
 - **Delete**: O(1)
+- 
+### Chaining
+
+| Operation | Average  | Worst |
+| --------- | -------- | ----- |
+| Search    | O(1 + α) | O(n)  |
+| Insert    | O(1)     | O(n)  |
+| Delete    | O(1)     | O(n)  |
+
+### Open Addressing
+
+| Operation | Average | Worst |
+| --------- | ------- | ----- |
+| Search    | O(1)    | O(n)  |
+| Insert    | O(1)    | O(n)  |
+| Delete    | O(1)    | O(n)  |
+
+
 
 
 ## Limitations
