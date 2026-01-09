@@ -67,6 +67,43 @@
 - matrix[i][j] = 1 if an edge exists
 - For weighted graphs: matrix[i][j] = weight
 
+### Properties
+
+- Space Complexity: O(V²)
+- Edge lookup: O(1)
+
+### Advantages
+
+- Very fast edge existence check
+- Simple to implement
+- Suitable for dense graphs
+
+### Disadvantages
+
+- Wastes memory for sparse graphs
+- Traversing neighbors costs O(V)
+
+**Adjacency List**
+
+- An array of lists
+- Each index represents a vertex
+- Each list stores neighboring vertices
+
+### Properties
+
+- Space Complexity: O(V + E)
+
+### Advantages
+
+- Efficient for sparse graphs
+- Faster traversal (BFS / DFS)
+- Easy to scale to large graphs
+
+### Disadvantages
+
+- Slower edge lookup (O(degree))
+- Slightly more complex implementation
+
 ## Example:
 Consider a simple undirected graph with nodes A, B, C, D and edges:
 
@@ -110,43 +147,6 @@ D: B → C
 
 - Explanation: Each node lists its connected nodes.
 - More space-efficient for sparse graphs.
-
-### Properties
-
-- Space Complexity: O(V²)
-- Edge lookup: O(1)
-
-### Advantages
-
-- Very fast edge existence check
-- Simple to implement
-- Suitable for dense graphs
-
-### Disadvantages
-
-- Wastes memory for sparse graphs
-- Traversing neighbors costs O(V)
-
-**Adjacency List**
-
-- An array of lists
-- Each index represents a vertex
-- Each list stores neighboring vertices
-
-### Properties
-
-- Space Complexity: O(V + E)
-
-### Advantages
-
-- Efficient for sparse graphs
-- Faster traversal (BFS / DFS)
-- Easy to scale to large graphs
-
-### Disadvantages
-
-- Slower edge lookup (O(degree))
-- Slightly more complex implementation
 
 ## Sparse vs Dense Graph:
 
