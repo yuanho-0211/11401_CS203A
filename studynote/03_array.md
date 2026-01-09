@@ -88,17 +88,36 @@ arr[-1] = 20;  // invalid
 ## Static Array vs Dynamic Array
 ### Static Array
 - Size fixed at declaration
+- Allocated on the stack (typically)
+-Fast access
+-Cannot be resized
 - Example:
 ```c
 int arr[10];
 ```
 ### Dynamic Array
 - Size determined at runtime
+- Allocated on the heap
+- Can be resized using realloc
+- Requires manual memory management
 - Can be resized (with extra cost)
 - Example:
 ```c
 int* arr = (int*)malloc(n * sizeof(int));
 ```
+### Important Notes
+- realloc may return the same memory address
+- Or it may allocate a new block and copy data
+- Old pointers may become invalid
+
+### Safe usage:
+```c
+int* temp = realloc(arr, newSize * sizeof(int));
+if (temp != NULL) {
+    arr = temp;
+}
+```
+
 ### Multidimensional Array
 - Arrays can have more than one dimension
 - Commonly used for tables or matrices
@@ -111,6 +130,26 @@ int matrix[2][3] = {
 ```
 Access element: matrix[1][2] → 6
 
+## Memory Layout
+
+## One-Dimensional Array
+```c
+int arr[4] = {10, 20, 30, 40};
+```
+```c
+| 10 | 20 | 30 | 40 |
+```
+- Stored in contiguous memory locations
+## Two-Dimensional Array (Row-Major Order)
+```c
+int matrix[2][3];
+```
+```c
+Row 0 → [ ][ ][ ]
+Row 1 → [ ][ ][ ]
+```
+- Rows are stored consecutively
+- Entire row is stored before moving to the next
 ## Common Mistakes
 - Assuming index starts from 1
 - Forgetting array size is fixed
