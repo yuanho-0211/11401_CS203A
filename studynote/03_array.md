@@ -193,6 +193,10 @@ for (int i = 0; i < n; i++) {
 - Forgetting array size is fixed
 - Accessing out-of-bounds index
 - Confusing array length with last index
+- Forgetting to free() dynamic arrays
+- Using old pointers after realloc
+- Mixing up row and column indices in 2D arrays
+- Confusing array size with capacity
 
 ## Time/Space
 - **Access**: O(1)
