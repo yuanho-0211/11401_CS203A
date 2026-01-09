@@ -20,9 +20,11 @@ Head → [data | next] → [data | next] → [data | next] → NULL
 
 ### Singly Linked List (SLL)
 
--Each node points only to the next node
--Traversal is forward only
--Head → Node1 → Node2 → Node3 → NULL
+- Each node points only to the next node
+- Traversal is forward only
+```c
+Head → Node1 → Node2 → Node3 → NULL
+```
 
 ### Doubly Linked List (DLL)
 
@@ -32,6 +34,7 @@ Head → [data | next] → [data | next] → [data | next] → NULL
 ```c
 NULL ← [prev|data|next] ↔ [prev|data|next] ↔ [prev|data|next] → NULL
 ```
+
 ### Circular Linked List
 
 - Last node points back to the head
