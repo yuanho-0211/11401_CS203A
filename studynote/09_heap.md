@@ -4,7 +4,7 @@
 
 - **heap**: A heap is a specialized tree-based data structure that satisfies the heap property.
 - **max heap**: In a max heap, the value of each parent node is greater than or equal to the values of its children.
-- **min heap:**:In a min heap, the value of each parent node is less than or equal to the values of its children.
+- **min heap**:In a min heap, the value of each parent node is less than or equal to the values of its children.
 - **Array Representation**: Heaps are usually implemented using arrays for efficient indexing.
  
 ## Visualization
