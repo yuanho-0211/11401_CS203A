@@ -185,7 +185,7 @@ curr
 ## Pointer Manipulation (Core Skill)
 
 - The efficiency of linked lists comes from changing pointers, not moving data
-- 
+  
 ### Incorrect pointer order may cause:
 
 - Lost nodes
