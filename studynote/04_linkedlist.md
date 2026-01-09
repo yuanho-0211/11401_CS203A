@@ -110,7 +110,7 @@ Free tail node
 O(n) if no tail pointer
 ```
 
--Delete middle node
+- Delete middle node
 
 ```c
 Traverse to previous node
