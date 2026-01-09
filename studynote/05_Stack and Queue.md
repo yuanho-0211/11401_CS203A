@@ -26,19 +26,43 @@ Rear
 ### Stack
 - **LIFO**: Last element inserted is the first one removed.
 - **Direction**: Both operations happen at the top.
+- Top pointer controls operations
 
 ### Queue
 - **FIFO**: First element inserted is the first removed.
 - **Direction**: Input at rear, output at front.
+- Front & Rear pointers
+
+## ADT View
+### ADT Stack
+
+- CreateS(size)
+- IsEmpty()
+- IsFull()
+- Push(x)
+- Pop()
+- Peek()
+
+### ADT Queue
+
+- CreateQ(size)
+- IsEmptyQ()
+- IsFullQ()
+- Enqueue(x)
+- Dequeue()
+- Front()
 
 ## Types -Stack
 ### Array-based Stack
 - Fixed size or dynamic (resizable)
 - Top index points to last element
+- Overflow possible
 
 ### Linked-list Stack
-- Dynamic size, no overflow (except memory)
+- Dynamic size
 - Top pointer points to head node
+- No overflow unless memory full
+- Extra pointer overhead
 
 ## Types -Queue
 ### Simple Queue (Array)
@@ -68,7 +92,44 @@ Rear
 | `front()` / `peek()` | Return front element      | O(1)                                    |
 | `isEmpty()`          | Check if queue is empty   | O(1)                                    |
 
+### Implementation
 
+### Stack (Array)
+```c
+push(x):
+if top == MAX-1 → overflow
+else stack[++top] = x
+
+pop():
+if top == -1 → underflow
+else return stack[top--]
+```
+
+### Queue (Circular Array)
+```c
+enqueue(x):
+rear = (rear+1)%MAX
+queue[rear] = x
+
+dequeue():
+front = (front+1)%MAX
+return queue[front]
+```
+- Empty: front == rear
+- Full: (rear+1)%MAX == front
+
+## Linked List Version
+### Stack
+- Push → insert at head
+- Pop → remove head
+
+### Queue
+
+- Enqueue → insert at tail
+- Dequeue → remove head
+
+### Special case:
+When queue becomes empty → rear = NULL
 
 ## Time/Space
 ### Stack
@@ -78,6 +139,16 @@ Rear
 ### Queue
 - **Array**: O(1) enqueue/dequeue with circular buffer
 - **Linked list**: O(1) enqueue at tail and dequeue at head
+
+## Time / Space
+| Structure | Array | Linked List |
+| --------- | ----- | ----------- |
+| Stack     | O(1)  | O(1)        |
+| Queue     | O(1)  | O(1)        |
+
+### Space:
+- Array: fixed, may waste
+- Linked list: pointer overhead
 
 ## Limitations
 ### Stack
