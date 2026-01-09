@@ -150,6 +150,44 @@ Row 1 → [ ][ ][ ]
 ```
 - Rows are stored consecutively
 - Entire row is stored before moving to the next
+
+## Searching in Array
+### Linear Search
+- Used for unsorted arrays
+- Time complexity: O(n)
+```c
+for (int i = 0; i < n; i++) {
+    if (arr[i] == target) return i;
+}
+```
+### Binary Search
+- Requires a sorted array
+- Divides search space in half each step
+- Time complexity: O(log n)
+
+## Sorting with Arrays
+### Bubble Sort
+- Repeatedly compares adjacent elements
+- Simple but inefficient
+- Time complexity: O(n²)
+
+### Selection Sort
+- Finds the minimum element in each pass
+- Fewer swaps
+- Time complexity: O(n²)
+
+### Insertion Sort
+- Inserts elements into their correct position
+- Efficient for small or nearly sorted arrays
+- Best case: O(n)
+
+## Arrays as Building Blocks
+### Arrays are used to implement:
+- Stack
+- Queue
+- Heap
+- Hash Table
+- Graph adjacency matrix
 ## Common Mistakes
 - Assuming index starts from 1
 - Forgetting array size is fixed
