@@ -29,5 +29,5 @@ The main function of homework is to help me review whatI have learned in class a
 The main function of a quiz is to check my understanding of the lesson content. Through quizzes, I can identify their weaknesses and make improvements.
 ## Studynote
 The main function of studynote is to help me organize and record key points from lessons and make learning more systematic. By writing and reviewing studynote, Ican deepen their understanding, strengthen memory, and improve the efficiency of review and exam preparation. 
-## riview note
+## Riview note
 Riview notes are written by me after class and help me organize the key points from the lessons and study the parts I don’t fully understand.
