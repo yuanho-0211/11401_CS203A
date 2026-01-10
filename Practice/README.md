@@ -13,7 +13,7 @@ printf("Index %d -> Value: %d, Address: %p\n", i, array[i], (void*)&array[i]);
 - Extend this experiment to 2D, 3D, or higher-dimensional arrays.
 - Run the program multiple times to observe memory addresses during the initial allocation with malloc and the subsequent expansion with realloc.
 
-## Practice III: Exploring Linked List Behavior
+### Practice III: Exploring Linked List Behavior
 
 - Use the example C code to study how linked lists allocate and free memory.
 - Add debug statements to print each node’s memory address during creation and deletion:
