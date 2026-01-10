@@ -31,3 +31,5 @@ The main function of a quiz is to check my understanding of the lesson content. 
 The main function of studynote is to help me organize and record key points from lessons and make learning more systematic. By writing and reviewing studynote, Ican deepen their understanding, strengthen memory, and improve the efficiency of review and exam preparation. 
 ## Riview note
 Riview notes are written by me after class and help me organize the key points from the lessons and study the parts I don’t fully understand.
+## 修課心得
+上完資料結構的心得感想
