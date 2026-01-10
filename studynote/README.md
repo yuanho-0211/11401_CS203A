@@ -7,8 +7,8 @@ The main function of studynote is to help me organize and record key points from
 - 05_stack and queue
 - 06_hash
 - 07_tree
-- 08_heap
-- 09_graph
-- 10_compare array linklist
-- 11_compare stack and queue
-- 12_compare tree graph
+- 08_graph
+- 09_heap
+- 10_array vs linklist
+- 11_stack vs queue
+- 12_tree vs graph
