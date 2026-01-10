@@ -1,7 +1,7 @@
 ## CS203A – Data Structures 
 ### Practice 1: Code Review and Improvement
 - Review the provided incomplete array demo code.
-- Refactor and complete the code to enhance safety, readability, and correctness.
+- Complete the code to enhance safety, readability, and correctness.
 
 ### Practice 2: Exploring Array Behavior
 - Use the example C code to study how memory is allocated using malloc and realloc.
@@ -9,8 +9,8 @@
 ```c
 printf("Index %d -> Value: %d, Address: %p\n", i, array[i], (void*)&array[i]);
 ```
-- Compare the memory layout before and after reallocation to understand how dynamic arrays behave.
-- Extend this experiment to 2D, 3D, or higher-dimensional arrays.
+- Compare the memory layout before and after reallocation.
+- Extend to 2D, 3D, or higher-dimensional arrays.
 - Run the program multiple times to observe memory addresses during the initial allocation with malloc and the subsequent expansion with realloc.
 
 ### Practice III: Exploring Linked List Behavior
