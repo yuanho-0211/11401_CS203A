@@ -1,4 +1,4 @@
-## Data Structures Summary
+## CS203A – Data Structures Summary
 ## Introduction
 - Organize an Introduction to Data Structures
 ## ADT
